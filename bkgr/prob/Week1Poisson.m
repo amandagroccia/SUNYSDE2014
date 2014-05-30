@@ -5,6 +5,7 @@ clear all
 k=0; lambda=200;
 prob=0;
 pn=exp(-lambda);
+% We had problems with the factorial!
 while (k<=150)
    %prob=prob+((exp(-lambda)*lambda^k)/factorial(k));
    prob=prob+pn;
