@@ -4,7 +4,7 @@ data<-read.csv('bpath1firststeps.csv',header=FALSE,sep=',')
 names(data)
 hist(data$V1,probability=TRUE,breaks=100)
 x<-seq(-3,3,by=0.05)
-points(x,dnorm(x,mean=0,sd=1),type='l',col=2)
+points(x,dnorm(x,mean=0,sd=1),type='l',col=4)
 
 # confidence interval for mean
 n=length(data$V1)
