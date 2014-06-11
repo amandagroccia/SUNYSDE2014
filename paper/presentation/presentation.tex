@@ -1,0 +1,68 @@
+\documentclass{beamer} % {article} %
+\usepackage{etoolbox}
+\mode<presentation>
+%\usepackage{beamerarticle}
+%\usepackage{graphicx}
+
+
+
+\usepackage{tikz}
+
+
+\usetheme{Frankfurt}%
+\usecolortheme{seagull}
+\logo{\includegraphics[height=.25in]{img/clarksonGreen}}
+
+\definecolor{garnet}{RGB}{136,0,0}
+%\definecolor{clarksonGreen}{RGB}{0,71,28}
+\definecolor{clarksonGreen}{RGB}{0,52,21}
+\setbeamercolor{palette primary}{fg=clarksonGreen,bg=white}
+\setbeamercolor{palette secondary}{fg=clarksonGreen,bg=white}
+\setbeamercolor{palette tertiary}{fg=clarksonGreen,bg=white}
+\setbeamercolor{palette quaternary}{bg=clarksonGreen,fg=white}
+\setbeamercolor{block title}{fg=black,bg=black!15}
+\setbeamercolor{block body}{fg=black,bg=black!10}
+\setbeamercolor{titlelike}{bg=clarksonGreen,fg=white} % parent=palette quaternary}
+
+%\includeonly{introduction2ODEs}
+%\includeonly{solutionsToDEs}
+
+
+\begin{document}
+
+\author{Us}
+\institute{SUNY Potsdam and Clarkson University}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%% The title page
+
+\title{Stochastic Differential Equations}
+\subtitle{Introduction}
+\date{\today}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%% The overview and introduction
+
+\include{introduction}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%% The specifics about SDEs
+
+\include{stochasticDEs}
+
+
+
+\end{document}
+
