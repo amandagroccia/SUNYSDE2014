@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-1.40.11 (Web2C 2010) (format=pdflatex 2012.1.23)  16 JUN 2014 15:41
+=======
 This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 JUN 2014 15:42
+>>>>>>> master
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,6 +1194,17 @@ Here is how much of TeX's memory you used:
  433631 words of memory out of 3000000
  21012 multiletter control sequences out of 15000+200000
  10258 words of font info for 38 fonts, out of 3000000 for 9000
+<<<<<<< HEAD
+ 714 hyphenation exceptions out of 8191
+ 48i,20n,65p,864b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
+<c:/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
+live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2010
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2010/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2010/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2010/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb>
+Output written on presentation.pdf (23 pages, 128574 bytes).
+=======
  831 hyphenation exceptions out of 8191
  49i,20n,65p,912b,814s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -1199,6 +1214,7 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
 sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on presentation.pdf (23 pages, 129364 bytes).
+>>>>>>> master
 PDF statistics:
  997 PDF objects out of 1000 (max. 8388607)
  927 compressed objects within 10 object streams
