@@ -43,7 +43,7 @@ while (j<=N)
     erreul(j+1)=abs(yeuler-ytrue); 
     j=j+1;
 end    
-loglog([0;dt],errheun,'r*',[0;dt],erreul,'*'); %hold off
+loglog([0,dt],errheun,'r*',[0,dt],erreul,'*'); %hold off
 xlabel('dt')
 ylabel('error')
 legend('Heuns','Eulers')
