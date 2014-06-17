@@ -31,3 +31,15 @@ It\^o's Formula is used in It\^o Calculus to find the differential of a time-dep
 		
 \end{frame}
 
+\begin{frame}
+\frametitle{Heun's Method}
+\begin{itemize}
+\item Huen's Method is a modified version of Euler's Method. This is a numerical procedure for solving ordinary differential equations with a given initial value.
+\item First you calculate the intermediate value $\tilde{y}_{i+1}$ and then the final approximation $y_{i+1}$ at the next generation point.
+\end{itemize}
+
+\begin{align*}
+	\tilde{y}_{i+1} &= y_i + \Delta t \ f(t_i, y_i) \\
+	y_{i+1} &= y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(y_i +\delta t f(y_i,t_i), t_i)\right]
+\end{align*}
+\end{frame}
