@@ -1,0 +1,6 @@
+setwd("~/Summer 2014/REU")
+emerr<-read.csv('emerror.csv',header=FALSE,sep=' ')
+summary(emerr)
+var(emerr$V7)
+hist(emerr$V7,probability=TRUE,breaks=100)
+wilcox.test(log(emerr$V7))
