@@ -2,11 +2,11 @@
 % For the system:    y' = ry,   y(0) = 1   over the interval [0,T]
 %% True Solution
 clear all
-N=500; T=1; r=1; % N is # of approximations to make for y(T)
+N=30:10:500; T=1; r=1; % N is # of approximations to make for y(T)
 dt=zeros(N,1);
 %c=10; % constant interval of increase for dt
 %n=zeros(N,1);
-dt = T./(30:10:N);
+dt = T./N;
 y0=1; k=y0; % ytrue(1)=y(0) init. condition
 ytrue=k*exp(r*T);
 %% Heun's Approximation 
@@ -16,7 +16,7 @@ errheun=zeros(size(dt,2),1);
 while (j<=size(dt,2))
     yheun=y0;
     i=2;
-    while (i<=N+1)
+    while (i<=N(j)+1)
         k1=r*yheun; k2=r*(yheun+dt(j)*k1);
         yheun=yheun+.5*dt(j)*(k1+k2);
         i=i+1;
@@ -32,8 +32,8 @@ j=1;
 while (j<=size(dt,2))
     yeuler=y0;
     i=2;
-    while (i<=N+1)
-        yeuler=yeuler+dt(j)*r*yheun;
+    while (i<=(N(j)+1))
+        yeuler=yeuler+dt(j)*r*yeuler;
         i=i+1;
     end
     erreul(j)=abs(yeuler-ytrue); 
