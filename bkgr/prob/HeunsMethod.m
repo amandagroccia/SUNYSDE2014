@@ -3,7 +3,7 @@
 %% True Solution
 clear all
 N=30:10:500; T=1; r=1; % N is # of approximations to make for y(T)
-dt=zeros(N,1);
+%dt=zeros(1,length(N));
 %c=10; % constant interval of increase for dt
 %n=zeros(N,1);
 dt = T./N;
