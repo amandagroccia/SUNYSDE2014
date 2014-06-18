@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.10pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
@@ -13,68 +13,71 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{1}{2}{5/5}{The Problem}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{1}{3}{6/8}{The Problem}{0}}
-\headcommand {\beamer@framepages {6}{8}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Statistics}}\headcommand {\beamer@subsectionpages {4}{8}}
-\headcommand {\slideentry {1}{2}{1}{9/12}{Statistics}{0}}
-\headcommand {\beamer@framepages {9}{12}}
-\headcommand {\slideentry {1}{2}{2}{13/13}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{3}{6/6}{The Problem}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{1}{4}{7/7}{The Problem}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {1}{1}{5}{8/8}{The Problem}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {1}{1}{6}{9/9}{The Problem}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {1}{1}{7}{10/10}{The Problem}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {1}{1}{8}{11/11}{The Problem}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {1}{1}{9}{12/12}{The Problem}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {1}{1}{10}{13/13}{The Problem}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {1}{2}{3}{14/14}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{11}{14/14}{The Problem}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {1}{2}{4}{15/15}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{12}{15/15}{The Problem}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{2}{5}{16/16}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{13}{16/16}{The Problem}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {1}{2}{6}{17/17}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{14}{17/17}{The Problem}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {1}{2}{7}{18/18}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{15}{18/18}{The Problem}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {1}{2}{8}{19/19}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{16}{19/19}{The Problem}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {1}{2}{9}{20/20}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{17}{20/20}{The Problem}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {1}{2}{10}{21/21}{Statistics}{0}}
+\headcommand {\slideentry {1}{1}{18}{21/21}{The Problem}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {1}{2}{11}{22/22}{Statistics}{0}}
+\headcommand {\sectionentry {2}{Modeling}{22}{Modeling}{0}}
+\headcommand {\beamer@sectionpages {3}{21}}
+\headcommand {\beamer@subsectionpages {4}{21}}
+\headcommand {\slideentry {2}{0}{19}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{2}{12}{23/23}{Statistics}{0}}
+\headcommand {\slideentry {2}{0}{20}{23/23}{}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {1}{2}{13}{24/24}{Statistics}{0}}
+\headcommand {\slideentry {2}{0}{21}{24/24}{}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\sectionentry {2}{Modeling}{25}{Modeling}{0}}
-\headcommand {\beamer@sectionpages {3}{24}}
-\headcommand {\beamer@subsectionpages {9}{24}}
-\headcommand {\slideentry {2}{0}{14}{25/25}{}{0}}
+\headcommand {\slideentry {2}{0}{22}{25/25}{}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {2}{0}{15}{26/26}{}{0}}
+\headcommand {\sectionentry {3}{Stochastic Calculus}{26}{Stochastic Calculus}{0}}
+\headcommand {\beamer@sectionpages {22}{25}}
+\headcommand {\beamer@subsectionpages {22}{25}}
+\headcommand {\slideentry {3}{0}{23}{26/26}{}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {2}{0}{16}{27/27}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{27}{Stochastic Integration}}\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\slideentry {3}{1}{1}{27/27}{Stochastic Integration}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {2}{0}{17}{28/28}{}{0}}
+\headcommand {\slideentry {3}{1}{2}{28/28}{Stochastic Integration}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\sectionentry {3}{Stochastic Calculus}{29}{Stochastic Calculus}{0}}
-\headcommand {\beamer@sectionpages {25}{28}}
-\headcommand {\beamer@subsectionpages {25}{28}}
-\headcommand {\slideentry {3}{0}{18}{29/29}{}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{30}{Stochastic Integration}}\headcommand {\beamer@subsectionpages {29}{29}}
-\headcommand {\slideentry {3}{1}{1}{30/30}{Stochastic Integration}{0}}
-\headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {3}{1}{2}{31/31}{Stochastic Integration}{0}}
-\headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{1}{3}{32/35}{Stochastic Integration}{0}}
-\headcommand {\beamer@framepages {32}{35}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{36}{Stochastic Differential Equations}}\headcommand {\beamer@subsectionpages {30}{35}}
-\headcommand {\slideentry {3}{2}{1}{36/36}{Stochastic Differential Equations}{0}}
-\headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{2}{2}{37/37}{Stochastic Differential Equations}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{38}{Random Thoughts}}\headcommand {\beamer@subsectionpages {36}{37}}
-\headcommand {\slideentry {3}{3}{1}{38/39}{Random Thoughts}{0}}
-\headcommand {\beamer@framepages {38}{39}}
-\headcommand {\beamer@partpages {1}{39}}
-\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\beamer@sectionpages {29}{39}}
-\headcommand {\beamer@documentpages {39}}
-\headcommand {\def \inserttotalframenumber {30}}
+\headcommand {\slideentry {3}{1}{3}{29/32}{Stochastic Integration}{0}}
+\headcommand {\beamer@framepages {29}{32}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{33}{Stochastic Differential Equations}}\headcommand {\beamer@subsectionpages {27}{32}}
+\headcommand {\slideentry {3}{2}{1}{33/33}{Stochastic Differential Equations}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {3}{2}{2}{34/34}{Stochastic Differential Equations}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{35}{Random Thoughts}}\headcommand {\beamer@subsectionpages {33}{34}}
+\headcommand {\slideentry {3}{3}{1}{35/36}{Random Thoughts}{0}}
+\headcommand {\beamer@framepages {35}{36}}
+\headcommand {\beamer@partpages {1}{36}}
+\headcommand {\beamer@subsectionpages {35}{36}}
+\headcommand {\beamer@sectionpages {26}{36}}
+\headcommand {\beamer@documentpages {36}}
+\headcommand {\def \inserttotalframenumber {32}}
