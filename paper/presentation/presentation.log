@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.1.6)  19 JUN 2014 12:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.1.6)  19 JUN 2014 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,30 +958,32 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [4
 
 ]
-<shrimpy1.png, id=375, 638.385pt x 422.57875pt>
-File: shrimpy1.png Graphic file (type png)
- <use shrimpy1.png>
-Package pdftex.def Info: shrimpy1.png used on input line 38.
+<img/shrimpy1.png, id=375, 638.385pt x 422.57875pt>
+File: img/shrimpy1.png Graphic file (type png)
+ <use img/shrimpy1.png>
+Package pdftex.def Info: img/shrimpy1.png used on input line 38.
 (pdftex.def)             Requested size: 227.62204pt x 150.67097pt.
- [5
 
- <./shrimpy1.png>] <shrimpy2.jpg, id=431, 634.37pt x 422.57875pt>
-File: shrimpy2.jpg Graphic file (type jpg)
- <use shrimpy2.jpg>
-Package pdftex.def Info: shrimpy2.jpg used on input line 42.
+[5
+
+ <./img/shrimpy1.png>] <img/shrimpy2.jpg, id=431, 634.37pt x 422.57875pt>
+File: img/shrimpy2.jpg Graphic file (type jpg)
+
+<use img/shrimpy2.jpg>
+Package pdftex.def Info: img/shrimpy2.jpg used on input line 42.
 (pdftex.def)             Requested size: 227.62204pt x 151.62527pt.
+ [6
 
-[6
-
- <./shrimpy2.jpg>] <shrimpy3.jpg, id=484, 636.3775pt x 420.57124pt>
-File: shrimpy3.jpg Graphic file (type jpg)
-
-<use shrimpy3.jpg>
-Package pdftex.def Info: shrimpy3.jpg used on input line 46.
+ <./img/shrimpy2.jpg>]
+<img/shrimpy3.jpg, id=484, 636.3775pt x 420.57124pt>
+File: img/shrimpy3.jpg Graphic file (type jpg)
+ <use img/shrimpy3.jpg>
+Package pdftex.def Info: img/shrimpy3.jpg used on input line 46.
 (pdftex.def)             Requested size: 227.62204pt x 150.43008pt.
- [7
 
- <./shrimpy3.jpg>]
+[7
+
+ <./img/shrimpy3.jpg>]
 <img/kinzlermap.png, id=539, 936.49875pt x 657.45625pt>
 File: img/kinzlermap.png Graphic file (type png)
 
@@ -1120,7 +1122,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
  18617 strings out of 495063
- 351386 string characters out of 3182674
+ 351434 string characters out of 3182674
  462536 words of memory out of 3000000
  21219 multiletter control sequences out of 15000+200000
  11334 words of font info for 41 fonts, out of 3000000 for 9000
