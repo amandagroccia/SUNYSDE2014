@@ -17,7 +17,7 @@
 %randn('state',100)          % set the state of randn
 T=1; N=250; dt=T/N;          % Set up the bounds
 skip = 5;                    % Plot every "skip" time steps.
-colours = ['r-';'b-';'g-'];   % Define the colours to plot in
+colours = ['r-';'b-';'g-';'c-';'m-'];   % Define the colours to plot in
 timeValues = 0:dt:T;         % Set up the time values
 
 % Set up the plotting window so it looks all nice and proper like.
