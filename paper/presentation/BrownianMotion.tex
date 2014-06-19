@@ -72,55 +72,58 @@
 %This numbers equations by section
 \numberwithin{equation}{section}
 
+\section{Brownian Motion}
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[ currentsection ]
+\end{frame}
+
+\subsection{Random Walk}
 %\begin{document}
+\begin{frame}{Markov Process}
+(\textbf{Markov Process}) is a stochastic process with the following properties: 
+\begin{enumerate}
+\item The number of possible outcomes or states is finite
+\item The outcome at any stage depends only on the outcome of the previous stage.
+\item The probabilities are constant over time.   
+\end{enumerate}
+\end{frame}
+
 
 \begin{frame}{Brownian Motion}
 \begin{definition}(\textbf{Brownian Motion}) is a stochastic process that models random continuous motion. The stochastic process $B=\{B(t), t\geq 0\}$ is standard Brownian Motion if the following holds:
 \begin{enumerate}
-\item[(1)]
-$B$ has independent increments.
-\item[(2)]
-For $0 \leq s < t,$ $$B(t)-B(s) \sim N(0,t-s),$$\\
-meaning the increment $B(t)-B(s)$ is normally distributed with mean $0$ and variance equal to the length of the increment separating $s \ \text{and} \ t$
-\item[(3)] With probability $1$, paths of $B$ are continuous; that is, $$P[B \in C[0, \infty)]=1.$$
-\item[(4)] $B(0)=0$ 
+\item $B$ has independent increments.
+\item For $0 \leq s < t,$ $$B(t)-B(s) \sim N(0,t-s).$$
+\item The paths of $B$ are continuous with probability $1$.
+\item $B(0)=0$ 
 \end{enumerate}
 \end{definition}
-
-The Brownian motion process, sometimes referred to as the Weiner process can be thought of as a continuous time approximation of a random walk where the size of the steps is called to become smaller and the rate at which steps are taken is speeded up. \\
 \end{frame}
 
 \begin{frame}
-******INSERT RANDOM WALK SIMULATION HERE???*****
+  %\frametitle{Without Noise}
+  \movie[height=6.33cm,width=8.55cm,loop,poster]{Random Walk}{randomWalk.avi}
+
+  \hyperlinkmovie[once]{randomWalk.avi}{Random Walk}
 \end{frame}
 
-\begin{frame}{Markov Process}
-(\textbf{Markov Process}) is a stochastic process with the following properties: 
-\begin{enumerate}
-\item[(a.)] The number of possible outcomes or states if finite
-\item[(b.)] The outcome at any stage depends only on the outcome of the previous stage.
-\item[(c.)] The probabilities are constant over time.   
-\end{enumerate}
+
+\begin{frame}{Scaling a Brownian Motion}
+\vfill
+
+	If $x(t)$ is a Brownian Motion then $\displaystyle \frac{x(\lambda t)}{\sqrt{\lambda}}$ is a Brownian motion.
+	
+\vfill
+\begin{eqnarray*}
+	P \left(a \leq \frac{x(\lambda t)}{\sqrt{\lambda}}-\frac{x(\lambda s)}{\sqrt{\lambda}} \leq b \right)
+	& = & P \left(a \sqrt{\lambda} \leq x(\lambda t) - x (\lambda s) \leq b \sqrt{\lambda} \right),\\
+	& = & \displaystyle \frac{1}{\sqrt{2 \pi (\lambda t -\lambda s)}} \int_{a \sqrt{\lambda}}^{b \sqrt{\lambda}} e^{\frac{-x^2}{2}(\lambda t- \lambda s)} dx, \\
+  & = & \frac{1}{\sqrt{2 \pi (t-s)}} \int_{a}^{b} e^{\frac{-u^2}{t-s}}du .
+ \end{eqnarray*}
 \end{frame}
 
-\begin{frame}
-$$ \frac{x(\lambda t)}{\sqrt{\lambda}}$$ is a Brownian motion. 
-
-\begin{align*}
- & \frac{x(\lambda t)}{\sqrt{\lambda}}-\frac{x(\lambda s)}{\sqrt{\lambda}}\\
- & P \left(a \leq \frac{x(\lambda t)}{\sqrt{\lambda}}-\frac{x(\lambda s)}{\sqrt{\lambda}} \leq b \right)=P \left(a \sqrt{\lambda} \leq x(\lambda t) - x (\lambda s) \leq b \sqrt{\lambda} \right)\\
- & \displaystyle \frac{1}{\sqrt{2 \pi (\lambda t -\lambda s)}} \int_{a \sqrt{\lambda}}^{b \sqrt{\lambda}} e^{\frac{-x^2}{2}(\lambda t- \lambda s)} dx\\
-  & u=\frac{x}{\sqrt{\lambda}}\\
-  & du=\frac{1}{\sqrt{\lambda}}\\
-  & =\frac{1}{\sqrt{2 \pi \lambda(t-s)}} \int_{a}^{b} e^{\frac{-u^2}{t-s}} \cdot \sqrt{\lambda}du\\
-  & = \frac{1}{\sqrt{2 \pi (t-s)}} \int_{a}^{b} e^{\frac{-u^2}{t-s}}du
- \end{align*}
- 
-
-Brownian motion because has a $\mu=0 \ \text{and} \ \sigma^2=t-s$
-
-\end{frame}
-
+\subsection{Integration}
 \begin{frame}{Riemann-Stieltjes}
 (\textbf{Riemann-Stieltjes Integral}): 
 $$\displaystyle \int_{a}^{b} f(g)dg= \underset{n \to \infty}{\lim} \sum_{i=1}^{N} f(g(t_i)) \cdot (g(t_{i+1}))- g(t_i))$$\\
@@ -136,11 +139,33 @@ $$1[t_{i+1}, t_i] (t)= \begin{cases} 1 & \text{if} \ t_{i+1} \leq t < t_i \\
 
 
 %\textbf{Multivariate Taylor Expansion:} $$F(t)-F(s)=F^{\prime}(s)(t-s)+\frac{1}{2}F^{''} (s)(t-s)^2 + \frac{1}{3!}F^{'''}(t-s)^3+ \text{H.O.T}$$
+\subsection{It\^o's Formula}
 
-\begin{frame}{It\^o's Formula}
-\textbf{It\^{o}'s Formula} $$\displaystyle F(t, B(t))-F(a,B(a))=
+\begin{frame}
+\frametitle{It\^o's Formula}
+It\^o's Formula is used in It\^o Calculus to find the differential of a time-dependent function of a stochastic process.
+\vfill
+
+		 \begin{block}{Differential Form}
+      \begin{align*}
+				\displaystyle \partial x_t =\left(\frac{\partial x}{\partial t} + \frac{1}{2} \left(\frac{\partial ^2 x}{\partial B ^2}\right)\right) \cdot  dt + \frac{\partial x}{\partial B} \cdot dB 
+			\end{align*}
+    \end{block}
+		
+\vfill
+
+		\begin{block}{Integral Form}
+      \begin{align*}
+				\displaystyle F(t, B(t))-F(a,B(a))=
  \int_{a}^{t} \frac{\partial F}{\partial s} + \frac{1}{2} \frac{\partial^2 F}{\partial B^2}ds+
- \int_a^t \frac{\partial F}{\partial B} dB$$
+ \int_a^t \frac{\partial F}{\partial B} dB
+			\end{align*}
+    \end{block}
+
+\vfill
+\end{frame}
+
+\begin{frame}{It\^o's Formula} 
 
 Let $F=tB^2$ 
 \begin{align*}
@@ -157,20 +182,10 @@ tB^2(t)-aB^2(a) &= \int_a^t B^s ds+ \int_a^t 2sBdBt+ \frac{1}{2} t^2- \frac{1}{2
 \end{align*}
 \end{frame}
 
-\begin{frame}{Example of It\^o's Formula}
-Use It\^o's formula to find an integral expression for the following integraL:
-$$f(B)=B^4$$
-\begin{align*}
-f(x)&=B^4\\
-f'(x)&=4B^3\\
-f''(x)&=12B^2\\
-d(B^4)&= 4B^3(t)dB+\frac{1}{2}(12B(t)^2)dt\\
-	&=4B^3(t)dB+6B^2(t)dt\\
-B^4(t)&= 4 \int_0^t B^3 dB+ 6 \int_0^t B^2 ds\\
-E\left[\int_0^t B_s^2 ds\right] &= \frac{1}{6}E \left[B_t^4-4 \int_0^tB_s^3 dBs \right]\\
- &=\frac{1}{6}  \left[E \left[B_t^4\right]-4E\left[\int_0^t B_s^3 dBs \right] \right]\\
- &=\frac{1}{6}(3t^2)
-\end{align*}
+\section{Nondimensionalization}
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[ currentsection ]
 \end{frame}
 
 \begin{frame}{Nondimensionalization}
@@ -187,17 +202,6 @@ In the new differential equation, group the parameters into nondimensional combi
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Killer Shrimp}
-\centerline{\includegraphics[width=8cm]{shrimpy1}}
-\end{frame}
-
-\begin{frame}{Killer Shrimp}
-\centerline{\includegraphics[width=8cm]{shrimpy2}}
-\end{frame}
-
-\begin{frame}{Killer Shrimp}
-\centerline{\includegraphics[width=8cm]{shrimpy3}}
-\end{frame}
 
 %\end{document}
 
