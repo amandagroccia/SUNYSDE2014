@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.27pt}
 \beamer@sectionintoc {1}{Background on Shrimpy}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{The Problem}{4}{0}{1}
 \beamer@sectionintoc {2}{Brownian Motion}{13}{0}{2}

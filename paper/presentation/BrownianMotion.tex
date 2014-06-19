@@ -116,10 +116,13 @@
 	
 \vfill
 \begin{eqnarray*}
+  \lefteqn{
 	P \left(a \leq \frac{x(\lambda t)}{\sqrt{\lambda}}-\frac{x(\lambda s)}{\sqrt{\lambda}} \leq b \right)
-	& = & P \left(a \sqrt{\lambda} \leq x(\lambda t) - x (\lambda s) \leq b \sqrt{\lambda} \right),\\
-	& = & \displaystyle \frac{1}{\sqrt{2 \pi (\lambda t -\lambda s)}} \int_{a \sqrt{\lambda}}^{b \sqrt{\lambda}} e^{\frac{-x^2}{2}(\lambda t- \lambda s)} dx, \\
-  & = & \frac{1}{\sqrt{2 \pi (t-s)}} \int_{a}^{b} e^{\frac{-u^2}{t-s}}du .
+	} & & \\
+    & = & P \left(a \sqrt{\lambda} \leq x(\lambda t) - x (\lambda s) \leq b \sqrt{\lambda} \right), \\
+	& = & \displaystyle \frac{1}{\sqrt{2 \pi (\lambda t -\lambda s)}} 
+                    \int_{a \sqrt{\lambda}}^{b \sqrt{\lambda}} e^{\frac{-x^2}{2}(\lambda t- \lambda s)} dx, \\
+    & = & \frac{1}{\sqrt{2 \pi (t-s)}} \int_{a}^{b} e^{\frac{-u^2}{t-s}}du.
  \end{eqnarray*}
 \end{frame}
 
