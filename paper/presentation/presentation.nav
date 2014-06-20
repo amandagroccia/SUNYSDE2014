@@ -91,8 +91,12 @@
 \headcommand {\beamer@subsectionentry {0}{5}{3}{38}{Random Thoughts}}\headcommand {\beamer@subsectionpages {36}{37}}
 \headcommand {\slideentry {5}{3}{1}{38/39}{Random Thoughts}{0}}
 \headcommand {\beamer@framepages {38}{39}}
-\headcommand {\beamer@partpages {1}{39}}
-\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\beamer@sectionpages {29}{39}}
-\headcommand {\beamer@documentpages {39}}
-\headcommand {\def \inserttotalframenumber {35}}
+\headcommand {\slideentry {5}{3}{2}{40/40}{Random Thoughts}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {5}{3}{3}{41/41}{Random Thoughts}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@partpages {1}{41}}
+\headcommand {\beamer@subsectionpages {38}{41}}
+\headcommand {\beamer@sectionpages {29}{41}}
+\headcommand {\beamer@documentpages {41}}
+\headcommand {\def \inserttotalframenumber {37}}
