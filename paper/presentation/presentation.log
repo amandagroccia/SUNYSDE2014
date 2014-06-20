@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  20 JUN 2014 09:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  20 JUN 2014 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -794,8 +794,8 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
 emeseagull.sty
 Package: beamercolorthemeseagull 2010/06/17  (rcs-revision d02a7cf4d8ae)
-) (./presentation.aux (./introduction.aux) (./BrownianMotion.aux) (./stochastic
-DEs.aux) (./Modeling.aux) (./Nondimensionalization.aux))
+) (./presentation.aux (./introduction.aux) (./BrownianMotion.aux) (./Modeling.a
+ux) (./Nondimensionalization.aux))
 \openout1 = `presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -985,7 +985,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [4
 
 ]
-<img/shrimpy1.png, id=352, 638.385pt x 422.57875pt>
+<img/shrimpy1.png, id=312, 638.385pt x 422.57875pt>
 File: img/shrimpy1.png Graphic file (type png)
  <use img/shrimpy1.png>
 Package pdftex.def Info: img/shrimpy1.png used on input line 43.
@@ -993,7 +993,7 @@ Package pdftex.def Info: img/shrimpy1.png used on input line 43.
 
 [5
 
- <./img/shrimpy1.png>] <img/shrimpy2.jpg, id=404, 634.37pt x 422.57875pt>
+ <./img/shrimpy1.png>] <img/shrimpy2.jpg, id=360, 634.37pt x 422.57875pt>
 File: img/shrimpy2.jpg Graphic file (type jpg)
 
 <use img/shrimpy2.jpg>
@@ -1002,7 +1002,7 @@ Package pdftex.def Info: img/shrimpy2.jpg used on input line 49.
  [6
 
  <./img/shrimpy2.jpg>]
-<img/shrimpy3.jpg, id=455, 636.3775pt x 420.57124pt>
+<img/shrimpy3.jpg, id=407, 636.3775pt x 420.57124pt>
 File: img/shrimpy3.jpg Graphic file (type jpg)
  <use img/shrimpy3.jpg>
 Package pdftex.def Info: img/shrimpy3.jpg used on input line 55.
@@ -1011,7 +1011,7 @@ Package pdftex.def Info: img/shrimpy3.jpg used on input line 55.
 [7
 
  <./img/shrimpy3.jpg>]
-<img/kinzlermap.png, id=506, 936.49875pt x 657.45625pt>
+<img/kinzlermap.png, id=454, 936.49875pt x 657.45625pt>
 File: img/kinzlermap.png Graphic file (type png)
 
 <use img/kinzlermap.png>
@@ -1068,23 +1068,9 @@ d in the current directory, where it must reside for viewing. on input line 110
 ] [21
 
 ])
-\openout2 = `stochasticDEs.aux'.
-
- (./stochasticDEs.tex (./presentation.toc)
-[22
-
-
-
-] [23
-
-] [24
-
-] [25
-
-])
 \openout2 = `Modeling.aux'.
 
- (./Modeling.tex (./presentation.toc) [26
+ (./Modeling.tex (./presentation.toc) [22
 
 
 
@@ -1092,21 +1078,21 @@ d in the current directory, where it must reside for viewing. on input line 110
 \openout2 = `Nondimensionalization.aux'.
 
 
-(./Nondimensionalization.tex (./presentation.toc) [27
+(./Nondimensionalization.tex (./presentation.toc) [23
 
 
 
-] [28
+] [24
 
-] [29
+] [25
 
-] [30
+] [26
 
-]) [31
+]) [27
 
 
 ]
-(./presentation.bbl) [32
+(./presentation.bbl) [28
 
  </usr/local/texlive/2011/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf
 >]
@@ -1119,27 +1105,26 @@ d in the current directory, where it must reside for viewing. on input line 110
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
  (./presentation.aux (./introduction.aux)
-(./BrownianMotion.aux) (./stochasticDEs.aux) (./Modeling.aux)
-(./Nondimensionalization.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+(./BrownianMotion.aux) (./Modeling.aux) (./Nondimensionalization.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: BF5874CAEEF193A11A0AE2DD06DEDA09;664.
+(rerunfilecheck)             Checksum: 2E9648850098494FFE42F062B07090AA;462.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 18536 strings out of 493633
- 354475 string characters out of 3143378
- 454481 words of memory out of 3000000
- 21267 multiletter control sequences out of 15000+200000
+ 18497 strings out of 493633
+ 354022 string characters out of 3143378
+ 450128 words of memory out of 3000000
+ 21248 multiletter control sequences out of 15000+200000
  10846 words of font info for 40 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  49i,20n,65p,912b,879s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1155,10 +1140,10 @@ local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
 local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loc
 al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on presentation.pdf (32 pages, 928006 bytes).
+Output written on presentation.pdf (28 pages, 910234 bytes).
 PDF statistics:
- 1880 PDF objects out of 2073 (max. 8388607)
- 1766 compressed objects within 18 object streams
- 79 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1521 PDF objects out of 1728 (max. 8388607)
+ 1418 compressed objects within 15 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
