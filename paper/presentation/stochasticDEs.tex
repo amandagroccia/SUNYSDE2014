@@ -1,10 +1,14 @@
+
+
+\numberwithin{equation}{section}
+
 \section{Stochastic Calculus}
-
-
 \begin{frame}
   \frametitle{Outline}
   \tableofcontents[ currentsection]
 \end{frame}
+
+
 
 \subsection{Stochastic Integration}
 
@@ -21,6 +25,22 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Calculating Stochastic Integrals}
+		As an example consider the integral 
+			$$Z_t=\int_0^t B(s) dB(s)$$
+			
+		This integral can be calculated as
+			$$\displaystyle \int_0^t B(s)dB(s)=\frac{1}{2}(B^2(t)-B^2(0))-\frac{1}{2}$$
+			
+			% % can go over this calculation during presentation using Taylor Expansion
+			
+\end{frame}
+
+
+
+
+
+\begin{frame}
   \frametitle{The ``Usual Scaling''}
   \begin{eqnarray*}
     x & \rightarrow & \bar{X} \xi, \\
@@ -29,18 +49,18 @@
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{The Finite Difference Approximation}
+%\begin{frame}
+  %\frametitle{The Finite Difference Approximation}
 
-  \begin{itemize}
-  \item<4-> Usual stability issues.
-  \item<3-> Usual ease of use.
-  \item<2-> Usual wave speed problem.
-  \item<1-2> Usual centered difference scheme.
-  \end{itemize}
-  \uncover<3->{Don't that beat all?}
+  %\begin{itemize}
+  %\item<4-> Usual stability issues.
+  %\item<3-> Usual ease of use.
+  %\item<2-> Usual wave speed problem.
+  %\item<1-2> Usual centered difference scheme.
+  %\end{itemize}
+  %\uncover<3->{Don't that beat all?}
 
-\end{frame}
+%\end{frame}
 
 
 \subsection{Stochastic Differential Equations}
@@ -62,26 +82,26 @@
 %\end{frame}
 
 
-\subsection{Random Thoughts}
-\begin{frame}
-  \frametitle{Random Thoughts}
-  But what about Barney and PBS?
+%\subsection{Random Thoughts}
+%\begin{frame}
+ % \frametitle{Random Thoughts}
+  %But what about Barney and PBS?
 
-  \begin{columns}[t]
+  %\begin{columns}[t]
     
-    \column{.5\textwidth}
-    \begin{block}{Barney?}
-      Is it okay to trust your kids with Barney?
-    \end{block}
-    \pause
+   % \column{.5\textwidth}
+    %\begin{block}{Barney?}
+     % Is it okay to trust your kids with Barney?
+    %\end{block}
+    %\pause
   
-    \column{.5\textwidth}
-    \begin{block}{No, not Barney!}
-      Probably not.
-    \end{block}
+    %\column{.5\textwidth}
+    %\begin{block}{No, not Barney!}
+     % Probably not.
+    %\end{block}
 
-  \end{columns}
+  %\end{columns}
 
 
-\end{frame}
+%\end{frame}
 

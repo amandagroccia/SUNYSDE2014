@@ -5,9 +5,8 @@
 \beamer@subsectionintoc {2}{1}{Random Walk}{14}{0}{2}
 \beamer@subsectionintoc {2}{2}{Integration}{18}{0}{2}
 \beamer@subsectionintoc {2}{3}{It\^o's Formula}{20}{0}{2}
-\beamer@sectionintoc {3}{Nondimensionalization}{22}{0}{3}
-\beamer@sectionintoc {4}{Modeling}{24}{0}{4}
-\beamer@sectionintoc {5}{Stochastic Calculus}{28}{0}{5}
-\beamer@subsectionintoc {5}{1}{Stochastic Integration}{29}{0}{5}
-\beamer@subsectionintoc {5}{2}{Stochastic Differential Equations}{35}{0}{5}
-\beamer@subsectionintoc {5}{3}{Random Thoughts}{35}{0}{5}
+\beamer@sectionintoc {3}{Stochastic Calculus}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Stochastic Integration}{23}{0}{3}
+\beamer@subsectionintoc {3}{2}{Stochastic Differential Equations}{26}{0}{3}
+\beamer@sectionintoc {4}{Modeling}{26}{0}{4}
+\beamer@sectionintoc {5}{Nondimensionalization}{27}{0}{5}
