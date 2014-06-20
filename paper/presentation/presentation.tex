@@ -3,7 +3,7 @@
 \mode<presentation>
 %\usepackage{beamerarticle}
 %\usepackage{graphicx}
-
+\usepackage{multimedia}
 
 
 \usepackage{tikz}
@@ -11,7 +11,7 @@
 
 \usetheme{Frankfurt}%
 \usecolortheme{seagull}
-\logo{\includegraphics[height=.25in]{img/clarksonGreen}}
+%\logo{\includegraphics[height=.75in]{img/logo}}
 
 \definecolor{garnet}{RGB}{136,0,0}
 %\definecolor{clarksonGreen}{RGB}{0,71,28}
@@ -57,11 +57,40 @@
 
 \include{introduction}
 
+\include{BrownianMotion}
+
+\include{Modeling}
+
+\include{Nondimensionalization}
+
+
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%% The specifics about SDEs
 
-\include{stochasticDEs}
 
+
+\begin{frame}
+  \frametitle{Acknowledgments}
+  
+  We would like to thank the following for their support and funding: 
+  
+ \begin{itemize}
+ \item Dr. Joel Foisy, SUNY Potsdam
+ \item Dr. Kelly Black, Clarkson University
+ \item National Security Agency (number?)
+ \item National Science Foundation (DSM-1262737)
+ \end{itemize}
+  
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bibliography}
+
+  \bibliographystyle{plain}
+  \bibliography{background}
+  
+\end{frame}
 
 
 \end{document}
