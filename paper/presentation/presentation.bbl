@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{doi:10.1137/S0036144500378302}
+D.~Higham.
+\newblock An algorithmic introduction to numerical simulation of stochastic
+  differential equations.
+\newblock {\em SIAM Review}, 43(3):525--546, 2001.
+
+\bibitem{Dikerogammarus}
+Werner Kinzler, Axel Kley, Gerd Mayer, Dieter Waloszek, and Gerhard Maier.
+\newblock Mutual predation between and cannibalism within several freshwater
+  gammarids: Dikerogammarus villosus versus one native and thr ee invasives.
+\newblock {\em Aquatic Ecology}, 43(2):457--464, 2009.
+
+\bibitem{doi:10.1146/annurev.es.20.110189.001501}
+G~A Polis, C~A Myers, and R~D Holt.
+\newblock The ecology and evolution of intraguild predation: Potential
+  competitors that eat each other.
+\newblock {\em Annual Review of Ecology and Systematics}, 20(1):297--330, 1989.
+
+\end{thebibliography}
