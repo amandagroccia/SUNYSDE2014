@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.1.6)  19 JUN 2014 13:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.1.6)  20 JUN 2014 08:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,53 +958,53 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [4
 
 ]
-<img/shrimpy1.png, id=375, 638.385pt x 422.57875pt>
+<img/shrimpy1.png, id=388, 638.385pt x 422.57875pt>
 File: img/shrimpy1.png Graphic file (type png)
  <use img/shrimpy1.png>
-Package pdftex.def Info: img/shrimpy1.png used on input line 38.
+Package pdftex.def Info: img/shrimpy1.png used on input line 43.
 (pdftex.def)             Requested size: 227.62204pt x 150.67097pt.
 
 [5
 
- <./img/shrimpy1.png>] <img/shrimpy2.jpg, id=431, 634.37pt x 422.57875pt>
+ <./img/shrimpy1.png>] <img/shrimpy2.jpg, id=446, 634.37pt x 422.57875pt>
 File: img/shrimpy2.jpg Graphic file (type jpg)
 
 <use img/shrimpy2.jpg>
-Package pdftex.def Info: img/shrimpy2.jpg used on input line 42.
+Package pdftex.def Info: img/shrimpy2.jpg used on input line 49.
 (pdftex.def)             Requested size: 227.62204pt x 151.62527pt.
  [6
 
  <./img/shrimpy2.jpg>]
-<img/shrimpy3.jpg, id=484, 636.3775pt x 420.57124pt>
+<img/shrimpy3.jpg, id=501, 636.3775pt x 420.57124pt>
 File: img/shrimpy3.jpg Graphic file (type jpg)
  <use img/shrimpy3.jpg>
-Package pdftex.def Info: img/shrimpy3.jpg used on input line 46.
+Package pdftex.def Info: img/shrimpy3.jpg used on input line 55.
 (pdftex.def)             Requested size: 227.62204pt x 150.43008pt.
 
 [7
 
  <./img/shrimpy3.jpg>]
-<img/kinzlermap.png, id=539, 936.49875pt x 657.45625pt>
+<img/kinzlermap.png, id=558, 936.49875pt x 657.45625pt>
 File: img/kinzlermap.png Graphic file (type png)
 
 <use img/kinzlermap.png>
-Package pdftex.def Info: img/kinzlermap.png used on input line 52.
+Package pdftex.def Info: img/kinzlermap.png used on input line 61.
 (pdftex.def)             Requested size: 284.52756pt x 199.74638pt.
  [8
 
  <./img/kinzlermap.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 82.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 82.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 73.
+line 82.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2012/04/26
@@ -1031,7 +1031,7 @@ File: ot1mathkerncmss.fd 2012/04/26
 ]
 
 Package multimedia Warning: The movie file ``randomWalk.avi'' could not be foun
-d in the current directory, where it must reside for viewing. on input line 109
+d in the current directory, where it must reside for viewing. on input line 110
 .
 
 [16
@@ -1095,7 +1095,12 @@ d in the current directory, where it must reside for viewing. on input line 109
 
 ] [39
 
-])
+]) [40
+
+
+] (./presentation.bbl) [41
+
+ </usr/share/texmf-site/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1105,12 +1110,13 @@ d in the current directory, where it must reside for viewing. on input line 109
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
- (./presentation.aux (./introduction.aux)
-(./BrownianMotion.aux) (./Nondimensionalization.aux) (./stochasticDEs.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+ (./presentation.aux
+(./introduction.aux) (./BrownianMotion.aux) (./Nondimensionalization.aux)
+(./stochasticDEs.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 4CAABBADE415DDB3FD03CB359917AEFF;730.
 
@@ -1118,13 +1124,13 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 18617 strings out of 495063
- 351434 string characters out of 3182674
- 462536 words of memory out of 3000000
- 21219 multiletter control sequences out of 15000+200000
+ 18678 strings out of 495063
+ 353379 string characters out of 3182674
+ 465112 words of memory out of 3000000
+ 21270 multiletter control sequences out of 15000+200000
  11334 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,20n,65p,908b,883s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1138,10 +1144,10 @@ mss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
 ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on presentation.pdf (39 pages, 950151 bytes).
+Output written on presentation.pdf (41 pages, 961841 bytes).
 PDF statistics:
- 2360 PDF objects out of 2487 (max. 8388607)
- 2232 compressed objects within 23 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 2566 PDF objects out of 2984 (max. 8388607)
+ 2429 compressed objects within 25 object streams
+ 98 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
