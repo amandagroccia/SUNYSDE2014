@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+\beamer@endinputifotherversion {3.27pt}
+=======
 \beamer@endinputifotherversion {3.10pt}
+>>>>>>> 7d52086beb8eac4de7c4dccc197051fcbeefdd75
 \beamer@sectionintoc {1}{Background on Shrimpy}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{The Problem}{4}{0}{1}
 \beamer@sectionintoc {2}{Brownian Motion}{13}{0}{2}

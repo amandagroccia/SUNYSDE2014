@@ -1,5 +1,7 @@
 (TeX-add-style-hook "presentation"
  (lambda ()
+    (LaTeX-add-bibliographies
+     "background")
     (TeX-run-style-hooks
      "tikz"
      "multimedia"
