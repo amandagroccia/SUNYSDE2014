@@ -1,8 +1,19 @@
 \BOOKMARK [2][]{Outline0.1}{Background on Shrimpy}{}% 1
 \BOOKMARK [3][]{Outline0.1.1.4}{The Problem}{Outline0.1}% 2
 \BOOKMARK [2][]{Outline0.2}{Brownian Motion}{}% 3
+<<<<<<< HEAD
 \BOOKMARK [3][]{Outline0.2.1.14}{Fundamental Concepts}{Outline0.2}% 4
 \BOOKMARK [3][]{Outline0.2.2.18}{Integration}{Outline0.2}% 5
 \BOOKMARK [3][]{Outline0.2.3.20}{It\364's Formula}{Outline0.2}% 6
 \BOOKMARK [2][]{Outline0.3}{Modeling}{}% 7
 \BOOKMARK [2][]{Outline0.4}{Nondimensionalization}{}% 8
+=======
+\BOOKMARK [3][]{Outline0.2.1.14}{Random Walk}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.2.19}{Integration}{Outline0.2}% 5
+\BOOKMARK [3][]{Outline0.2.3.21}{It\364's Formula}{Outline0.2}% 6
+\BOOKMARK [2][]{Outline0.3}{Stochastic Calculus}{}% 7
+\BOOKMARK [3][]{Outline0.3.1.24}{Stochastic Integration}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.2.27}{Stochastic Differential Equations}{Outline0.3}% 9
+\BOOKMARK [2][]{Outline0.4}{Modeling}{}% 10
+\BOOKMARK [2][]{Outline0.5}{Nondimensionalization}{}% 11
+>>>>>>> 7d6944e62be914620aa1b706c78a5a3280ad77a8
