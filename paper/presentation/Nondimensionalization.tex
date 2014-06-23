@@ -47,3 +47,19 @@ The nondimensionalized system is:
 	y_{i+1} &= y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(\tilde{y}_{i+1}, t_{i+1})\right]
 \end{align*}
 \end{frame}
+
+
+\begin{frame}
+   \frametitle{Heun's Method vs. Euler's Method - Simulation}
+For the DE $y'=r y$ on $[0,T]$,\\
+\vspace{1em}
+	\hspace{1.5em} Heun's:$\hspace{1em} \tilde{y}_{i+1} = y_i + \Delta t \ f(t_i, y_i)$ \\
+	\hspace{1.5em} Euler's:$\hspace{1em}\tilde{y}_{i+1} = y_i + \Delta t \ f(r, y_i)$ \\
+\begin{columns}[t]
+    \column{.5\textwidth} 
+    \includegraphics[width=6cm]{img/Heun500}
+    \column{.5\textwidth}
+    \includegraphics[width=6cm]{img/Heun10000}
+  \end{columns}
+
+\end{frame}

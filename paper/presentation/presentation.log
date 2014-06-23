@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (Web2C 2010) (format=pdflatex 2012.1.23)  20 JUN 2014 14:00
+This is pdfTeX, Version 3.1415926-1.40.11 (Web2C 2010) (format=pdflatex 2012.1.23)  20 JUN 2014 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,11 +1053,28 @@ File: img/bpath1montecarlohist.jpeg Graphic file (type jpg)
 
 ] [31
 
-]) [32
-
-
 ]
-(./presentation.bbl) [33
+<img/Heun500.jpg, id=1798, 562.1pt x 421.575pt>
+File: img/Heun500.jpg Graphic file (type jpg)
+ <use img/Heun500.jpg>
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 65--65
+[][]  
+ []
+
+<img/Heun10000.jpg, id=1799, 562.1pt x 421.575pt>
+File: img/Heun10000.jpg Graphic file (type jpg)
+ <use img/Heun10000.jpg>
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 65--65
+[][]  
+ []
+
+[32
+
+ <./img/Heun500.jpg> <./img/Heun10000.jpg>]) [33
+
+
+] (./presentation.bbl)
+[34
 
  <c:/texlive/2010/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1071,9 +1088,9 @@ File: img/bpath1montecarlohist.jpeg Graphic file (type jpg)
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
- (./presentation.aux (./introduction.aux)
-(./BrownianMotion.aux) (./stochasticDEs.aux) (./Modeling.aux)
-(./Nondimensionalization.aux))
+
+(./presentation.aux (./introduction.aux) (./BrownianMotion.aux)
+(./stochasticDEs.aux) (./Modeling.aux) (./Nondimensionalization.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 071E80895E7C2E6F4E8B53BA595A48DE;664.
@@ -1084,10 +1101,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16293 strings out of 493747
- 299197 string characters out of 3147058
- 409935 words of memory out of 3000000
- 19001 multiletter control sequences out of 15000+200000
+ 16307 strings out of 493747
+ 299423 string characters out of 3147058
+ 409970 words of memory out of 3000000
+ 19011 multiletter control sequences out of 15000+200000
  10846 words of font info for 40 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  48i,20n,65p,864b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1102,10 +1119,10 @@ ssi10.pfb><c:/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 ><c:/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texl
 ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2010/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on presentation.pdf (33 pages, 983004 bytes).
+Output written on presentation.pdf (34 pages, 1029269 bytes).
 PDF statistics:
- 1966 PDF objects out of 2073 (max. 8388607)
- 1848 compressed objects within 19 object streams
- 81 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2019 PDF objects out of 2073 (max. 8388607)
+ 1898 compressed objects within 19 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
