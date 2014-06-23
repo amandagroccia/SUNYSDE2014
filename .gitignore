@@ -5,4 +5,8 @@
 *.bbl
 *.blg
 *.nav
+*.toc
+*.pdf
+*.out
+*.synctex.gz
 *~
