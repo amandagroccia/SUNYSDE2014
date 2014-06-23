@@ -51,7 +51,8 @@ end
 
 %movie(F)
 
-writerObj = VideoWriter('randomWalk.avi','Uncompressed AVI');
-%writerObj = VideoWriter('randomWalk.mp4','MPEG-4');
+%writerObj = VideoWriter('randomWalk.avi','Uncompressed AVI');
+writerObj = VideoWriter('randomWalk.mp4','MPEG-4');
 open(writerObj);
-writeVideo(writerObj,F)
+writeVideo(writerObj,F);
+close(writerObj)
