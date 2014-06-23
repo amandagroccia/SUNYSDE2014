@@ -7,5 +7,6 @@
 *.nav
 *.toc
 *.pdf
+*.out
 *.synctex.gz
 *~
