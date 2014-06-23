@@ -78,7 +78,7 @@
   \tableofcontents[ currentsection ]
 \end{frame}
 
-\subsection{Random Walk}
+\subsection{Fundamental Concepts}
 %\begin{document}
 \begin{frame}{Markov Process}
 (\textbf{Markov Process}) is a stochastic process with the following properties: 
@@ -137,14 +137,18 @@ $$\displaystyle \int_{a}^{b} f(g)dg= \underset{n \to \infty}{\lim} \sum_{i=1}^{N
 The main motivation for the Riemann-Stieltjes Integral comes from the concept of Cumulative Distribution Function (CDF) of a random variable. 
 \end{frame}
 
-\begin{frame}{Weiner Integral}
-\textbf{Weiner Integral} $$\int_{a}^{b} f(t)dW(t)$$
-$$1[t_{i+1}, t_i] (t)= \begin{cases} 1 & \text{if} \ t_{i+1} \leq t < t_i \\
-0 & \text{otherwise} \end{cases}$$
+\begin{frame}{Wiener Process}
+A standard Wiener process (also called Brownian Motion) is a stochastic process $\{W_t\}_{t \geq 0},$ which has properties mutually consistent with those of Brownian motion.
+
+\vfill
+
+\textbf{Wiener Integral} For a pair $(W_t,f(t))$ of a Wiener Process $W_t,$ a random process $f(t),$ we define the It\^o integral 
+	$$I(f)=\int_0^{\infty} f(t)dW_t$$
 \end{frame}
 
 
 %\textbf{Multivariate Taylor Expansion:} $$F(t)-F(s)=F^{\prime}(s)(t-s)+\frac{1}{2}F^{''} (s)(t-s)^2 + \frac{1}{3!}F^{'''}(t-s)^3+ \text{H.O.T}$$
+
 \subsection{It\^o's Formula}
 
 \begin{frame}
@@ -188,25 +192,25 @@ tB^2(t)-aB^2(a) &= \int_a^t B^s ds+ \int_a^t 2sBdBt+ \frac{1}{2} t^2- \frac{1}{2
 \end{align*}
 \end{frame}
 
-\section{Nondimensionalization}
-\begin{frame}
-  \frametitle{Outline}
-  \tableofcontents[ currentsection ]
-\end{frame}
+%\section{Nondimensionalization}
+%\begin{frame}
+ % \frametitle{Outline}
+  %\tableofcontents[ currentsection ]
+%\end{frame}
 
-\begin{frame}{Nondimensionalization}
-\textbf{Nondimensionalization}: method to reduce parameters. 
+%\begin{frame}{Nondimensionalization}
+%\textbf{Nondimensionalization}: method to reduce parameters. 
 
-\begin{enumerate}
-\item
-List all the variables and parameters along with their dimensions.
-\item
-For each variable, say $x$, form a product (or quotient) $p$ of parameters that has the same dimensions as $x$, and define a new variable $y=\frac{x}{p}.$ $y$ is a "dimensionless" variable. It's numberical  value is the same no matter what system of units is used.
-\item Rewrite the differential equation in terms of the new variables.
-\item 
-In the new differential equation, group the parameters into nondimensional combinations, and define a new set of nondimensional parameters expressed as the nondimensional combinations of the original parameters. 
-\end{enumerate}
-\end{frame}
+%\begin{enumerate}
+%\item
+%List all the variables and parameters along with their dimensions.
+%\item
+%For each variable, say $x$, form a product (or quotient) $p$ of parameters that has the same dimensions as $x$, and define a new variable $y=\frac{x}{p}.$ $y$ is a "dimensionless" variable. It's numberical  value is the same no matter what system of units is used.
+%\item Rewrite the differential equation in terms of the new variables.
+%\item 
+%In the new differential equation, group the parameters into nondimensional combinations, and define a new set of nondimensional parameters expressed as the nondimensional combinations of the original parameters. 
+%\end{enumerate}
+%\end{frame}
 
 
 %\end{document}

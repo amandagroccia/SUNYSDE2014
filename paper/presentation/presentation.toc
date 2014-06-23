@@ -1,13 +1,9 @@
-\beamer@endinputifotherversion {3.27pt}
+\beamer@endinputifotherversion {3.10pt}
 \beamer@sectionintoc {1}{Background on Shrimpy}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{The Problem}{4}{0}{1}
 \beamer@sectionintoc {2}{Brownian Motion}{13}{0}{2}
-\beamer@subsectionintoc {2}{1}{Random Walk}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Fundamental Concepts}{14}{0}{2}
 \beamer@subsectionintoc {2}{2}{Integration}{18}{0}{2}
 \beamer@subsectionintoc {2}{3}{It\^o's Formula}{20}{0}{2}
-\beamer@sectionintoc {3}{Nondimensionalization}{22}{0}{3}
-\beamer@sectionintoc {4}{Modeling}{24}{0}{4}
-\beamer@sectionintoc {5}{Stochastic Calculus}{29}{0}{5}
-\beamer@subsectionintoc {5}{1}{Stochastic Integration}{30}{0}{5}
-\beamer@subsectionintoc {5}{2}{Stochastic Differential Equations}{36}{0}{5}
-\beamer@subsectionintoc {5}{3}{Random Thoughts}{38}{0}{5}
+\beamer@sectionintoc {3}{Modeling}{22}{0}{3}
+\beamer@sectionintoc {4}{Nondimensionalization}{23}{0}{4}
