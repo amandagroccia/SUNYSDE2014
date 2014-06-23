@@ -6,4 +6,6 @@
 *.blg
 *.nav
 *.toc
+*.pdf
+*.synctex.gz
 *~
