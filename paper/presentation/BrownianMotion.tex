@@ -78,7 +78,7 @@
   \tableofcontents[ currentsection ]
 \end{frame}
 
-\subsection{Random Walk}
+\subsection{Fundamental Concepts}
 %\begin{document}
 \begin{frame}{Markov Process}
 (\textbf{Markov Process}) is a stochastic process with the following properties: 
@@ -148,14 +148,18 @@ $$\displaystyle \int_{a}^{b} f(g)dg= \underset{n \to \infty}{\lim} \sum_{i=1}^{N
 The main motivation for the Riemann-Stieltjes Integral comes from the concept of Cumulative Distribution Function (CDF) of a random variable. 
 \end{frame}
 
-\begin{frame}{Weiner Integral}
-\textbf{Weiner Integral} $$\int_{a}^{b} f(t)dW(t)$$
-$$1[t_{i+1}, t_i] (t)= \begin{cases} 1 & \text{if} \ t_{i+1} \leq t < t_i \\
-0 & \text{otherwise} \end{cases}$$
+\begin{frame}{Wiener Process}
+A standard Wiener process (also called Brownian Motion) is a stochastic process $\{W_t\}_{t \geq 0},$ which has properties mutually consistent with those of Brownian motion.
+
+\vfill
+
+\textbf{Wiener Integral} For a pair $(W_t,f(t))$ of a Wiener Process $W_t,$ a random process $f(t),$ we define the It\^o integral 
+	$$I(f)=\int_0^{\infty} f(t)dW_t$$
 \end{frame}
 
 
 %\textbf{Multivariate Taylor Expansion:} $$F(t)-F(s)=F^{\prime}(s)(t-s)+\frac{1}{2}F^{''} (s)(t-s)^2 + \frac{1}{3!}F^{'''}(t-s)^3+ \text{H.O.T}$$
+
 \subsection{It\^o's Formula}
 
 \begin{frame}
