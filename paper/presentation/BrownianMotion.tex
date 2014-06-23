@@ -103,10 +103,21 @@
 
 \begin{frame}
   %\frametitle{Without Noise}
-  \movie[height=6.33cm,width=8.55cm,loop,poster]{Random Walk}{randomWalk.avi}
+  \movie[height=6.33cm,width=8.55cm,loop,poster]{Random Walk}{randomWalk.mp4}
 
-  \hyperlinkmovie[once]{randomWalk.avi}{Random Walk} 
+  \hyperlinkmovie[once]{randomWalk.mp4}{Random Walk} 
   \cite{doi:10.1137/S0036144500378302}
+\end{frame}
+
+\begin{frame}
+   \frametitle{Monte Carlo Simulation - Brownian Motion}
+	Recorded final step of 5000 Brownian Motions over [0,1]\\
+	We expect the probability to be $~N(0,1)$. \\
+	\begin{center}
+		\includegraphics[width=5cm]{img/bpath1montecarlohist}\\
+	\end{center}
+	$\bar{x}=0.01931075,\hspace{1em} s^{2}=0.993332$,\hspace{1em} $p-value=0.1692423$ \\
+	\centerline{CI:\hspace{1em}  $\mu\hspace{.5em}\epsilon \hspace{.5em}(-0.0082225 , 0.04684401)$}
 \end{frame}
 
 
