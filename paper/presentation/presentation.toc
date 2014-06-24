@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Background on Shrimpy}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{The Problem}{4}{0}{1}
+\beamer@sectionintoc {2}{Brownian Motion}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{Fundamental Concepts}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Integration}{19}{0}{2}
+\beamer@subsectionintoc {2}{3}{It\^o's Formula}{21}{0}{2}
+\beamer@sectionintoc {3}{Modeling}{23}{0}{3}
+\beamer@sectionintoc {4}{Nondimensionalization}{25}{0}{4}
