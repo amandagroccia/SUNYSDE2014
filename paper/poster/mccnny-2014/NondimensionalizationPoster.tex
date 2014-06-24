@@ -129,7 +129,26 @@ The nondimensionalized system is: $$\frac{d{x}}{dt}= x(1-x), \hspace{.25em} x(0)
 
 
 }
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
+ \headerbox{Process}{name=solve,column=0,below=definition,above=bottom}{
+\begin{center}
+
+\begin{enumerate}
+\item
+	List all the variables and parameters along with their dimensions.
+	
+\item
+	For each variable, say $x$, form a product (or quotient) $p$ of parameters that has the same dimensions as $x$, and define a new variable $y=\frac{x}{p}.$ $y$ is a "dimensionless" variable. It's numerical  value is the same no matter what system of units is used.
+	
+\item Rewrite the differential equation in terms of the new variables.
+
+\item 
+	In the new differential equation, group the parameters into nondimensional combinations, and define a new set of nondimensional parameters expressed as the nondimensional combinations of the original parameters.
+	 
+\end{enumerate}
+\end{center}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Discussion}{name=simple,column=1,row=0}{
 
@@ -137,6 +156,21 @@ Based on the nondimensionalization of the logistic model it is clear that the pa
 
 
 ******INSERT GRAPH HERE*********
+}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\headerbox{Mutual Predation Example}{name=history,column=1,below=simple}
+{
+Southern German water routes have had several drastic population
+changes concerning gammarids \cite{Dikerogammarus}. Much of this is due to canal construction.
+
+ Of the five species who have lived in these waters, \textit{Dikerogammarus villosus (Dv)}, denoted $x$, and \textit{Dikerogammarus haemobaphes (Dh)}, denoted $y$, are the two dominating species. 
+
+Their populations can be modeled by:
+   \begin{align*}
+    \frac{dx}{dt} & = rx^2 \left(1-\frac{x}{K}\right) - \alpha xy - \frac{x^2 \gamma_\circ}{x+D}, \\
+    \frac{dy}{dt} & = \rho y^2 \left(1-\frac{y}{L}\right) - \beta xy -\frac{y^2 \delta_\circ}{y+R}.
+  \end{align*}
+	
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,40 +205,10 @@ $$F(q_1,q_2,\cdots, q_n)=0 \hspace{.5em} \text{ or equivalently} \hspace{.5em} q
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Process}{name=solve,column=0,below=definition,above=bottom}{
-\begin{center}
-
-\begin{enumerate}
-\item
-	List all the variables and parameters along with their dimensions.
-	
-\item
-	For each variable, say $x$, form a product (or quotient) $p$ of parameters that has the same dimensions as $x$, and define a new variable $y=\frac{x}{p}.$ $y$ is a "dimensionless" variable. It's numerical  value is the same no matter what system of units is used.
-	
-\item Rewrite the differential equation in terms of the new variables.
-
-\item 
-	In the new differential equation, group the parameters into nondimensional combinations, and define a new set of nondimensional parameters expressed as the nondimensional combinations of the original parameters.
-	 
-\end{enumerate}
-\end{center}
-}
+ 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Mutual Predation Example}{name=history,column=1,below=simple}
-{
-Southern German water routes have had several drastic population
-changes concerning gammarids \cite{Dikerogammarus}. Much of this is due to canal construction.
 
- Of the five species who have lived in these waters, \textit{Dikerogammarus villosus (Dv)}, denoted $x$, and \textit{Dikerogammarus haemobaphes (Dh)}, denoted $y$, are the two dominating species. 
-
-Their populations can be modeled by:
-   \begin{align*}
-    \frac{dx}{dt} & = rx^2 \left(1-\frac{x}{K}\right) - \alpha xy - \frac{x^2 \gamma_\circ}{x+D}, \\
-    \frac{dy}{dt} & = \rho y^2 \left(1-\frac{y}{L}\right) - \beta xy -\frac{y^2 \delta_\circ}{y+R}.
-  \end{align*}
-	
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\headerbox{Future Research}{name=app, column=3, below=graphs}{
