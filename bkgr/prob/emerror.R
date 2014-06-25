@@ -1,6 +1,12 @@
-setwd("~/Summer 2014/REU")
+setwd("~/Summer 2014/REU")  
 emerr<-read.csv('emerror.csv',header=FALSE,sep=' ')
+milerr<-read.csv('milerror.csv',header=FALSE,sep=' ')
 summary(emerr)
 var(emerr$V7)
 hist(emerr$V7,probability=TRUE,breaks=100)
 wilcox.test(log(emerr$V7))
+
+summary(milerr)
+var(milerr$V7)
+hist(milerr$V7,probability=TRUE,breaks=100)
+wilcox.test(log(milerr$V7))
