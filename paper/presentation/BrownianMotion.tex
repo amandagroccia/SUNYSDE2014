@@ -103,16 +103,30 @@
 
 \begin{frame}
   %\frametitle{Without Noise}
-  \movie[height=6.33cm,width=8.55cm,loop,poster]{Random Walk}{randomWalk.mp4}
+  %\movie[height=6.33cm,width=8.55cm,loop,poster]{Random Walk}{randomWalk.mp4}
+\vfill
 
-  \hyperlinkmovie[once]{randomWalk.mp4}{Random Walk} 
+\begin{center}
+	\includemedia[
+		label=vidA,
+		addresource=randomWalk.mp4,
+		activate=pageopen,
+		width=10cm, height=8cm,
+		flashvars={
+			source=randomWalk.mp4
+			&loop=true}
+		]{}{VPlayer.swf}
+\end{center}
+
+\vfill
+  %\hyperlinkmovie[once]{randomWalk.mp4}{Random Walk} 
   \cite{doi:10.1137/S0036144500378302}
 \end{frame}
 
 \begin{frame}
    \frametitle{Monte Carlo Simulation - Brownian Motion}
 	Recorded final step of 5000 Brownian Motions over [0,1]\\
-	We expect the probability to be $~N(0,1)$. \\
+	We expect the distribution to be $~N(0,1)$. \\
 	\begin{center}
 		\includegraphics[width=5cm]{img/bpath1montecarlohist}\\
 	\end{center}
@@ -143,12 +157,12 @@ is a Brownian motion.
 \end{frame}
 
 \subsection{Integration}
-\begin{frame}{Riemann-Stieltjes}
-(\textbf{Riemann-Stieltjes Integral}): 
-$$\displaystyle \int_{a}^{b} f(g)dg= \underset{n \to \infty}{\lim} \sum_{i=1}^{N} f(g(t_i)) \cdot (g(t_{i+1}))- g(t_i))$$\\
+%\begin{frame}{Riemann-Stieltjes}
+%(\textbf{Riemann-Stieltjes Integral}): 
+%$$\displaystyle \int_{a}^{b} f(g)dg= \underset{n \to \infty}{\lim} \sum_{i=1}^{N} f(g(t_i)) \cdot (g(t_{i+1}))- g(t_i))$$\\
 
-The main motivation for the Riemann-Stieltjes Integral comes from the concept of Cumulative Distribution Function (CDF) of a random variable. 
-\end{frame}
+%The main motivation for the Riemann-Stieltjes Integral comes from the concept of Cumulative Distribution Function (CDF) of a random variable. 
+%\end{frame}
 
 \begin{frame}{Wiener Process}
 A standard Wiener process (also called Brownian Motion) is a stochastic process $\{W_t\}_{t \geq 0},$ which has properties mutually consistent with those of Brownian motion.
@@ -187,7 +201,7 @@ It\^o's Formula is used in It\^o Calculus to find the differential of a time-dep
 
 		 \begin{block}{Differential Form}
       \begin{align*}
-				\displaystyle \partial x_t =\left(\frac{\partial x}{\partial t} + \frac{1}{2} \left(\frac{\partial ^2 x}{\partial B ^2}\right)\right) \cdot  dt + \frac{\partial x}{\partial B} \cdot dB 
+				\displaystyle dx_t =\left(\frac{\partial x}{\partial t} + \frac{1}{2} \left(\frac{\partial ^2 x}{\partial B ^2}\right)\right) \cdot  dt + \frac{\partial x}{\partial B} \cdot dB 
 			\end{align*}
     \end{block}
 		
@@ -214,10 +228,10 @@ Let $F=tB^2$
 &\frac{d^2 F}{dB^2}=2t
 \end{align*}
 \begin{align*}
-tB^2(t)-aB^2(a) &=\int_{a}^{t}B^s ds+ \int_{a}^{t}2sBdB+\int_a^t \frac{1}{2}2sds\\
- &=\int_a^b B^2+sds+\int_a^t 2sBdB\\
+tB^2(t)-aB^2(a) &=\int_{a}^{t}B^2 ~ ds+ \int_{a}^{t}2sB ~ dB+\int_a^t \frac{1}{2}2s ~ ds\\
+ &=\int_a^b \left(B^2+s \right) ~ ds+\int_a^t 2sB ~ dB\\
  &\text{OR}\\
-tB^2(t)-aB^2(a) &= \int_a^t B^s ds+ \int_a^t 2sBdBt+ \frac{1}{2} t^2- \frac{1}{2}a^2
+tB^2(t)-aB^2(a) &= \int_a^t B^2 ~ ds+ \int_a^t 2sB ~ dB+ \frac{1}{2} t^2- \frac{1}{2}a^2
 \end{align*}
 \end{frame}
 
