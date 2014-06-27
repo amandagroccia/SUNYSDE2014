@@ -159,6 +159,22 @@ A standard Wiener process (also called Brownian Motion) is a stochastic process 
 	$$I(f)=\int_0^{\infty} f(t)dW_t$$
 \end{frame}
 
+\begin{frame}
+   \frametitle{Monte Carlo Simulation - It\^o Integral}
+	Recorded approximations of 5000 It\^o Integrals for $\int^{1.5}_{0} W dW$\\
+	WHAT DO WE EXPECT???? I DON'T KNOW. \\
+	\begin{center}
+		\includegraphics[width=5cm]{img/ito}\\
+	\end{center}
+	\begin{center}
+	$\bar{x}=0.000555,\hspace{1em} s^{2}=0.4925248$%,\hspace{1em} $t-test \hspace{.5em} p-value=0.16924$ 
+
+%GUYS...... NOW THAT YOU'RE HERE---- LOOK AT ito_integral_stats.R. We expect mean 0 and variance .5??????????
+% AND I'M NOT SURE IF THE CONFIDENCE INTERVAL WORKS RIGHT FOR THIS EITHER!!
+	\end{center} 
+	%\centerline{CI:\hspace{1em}  $\mu\hspace{.5em}\epsilon \hspace{.5em}(-0.00822 , 0.046844)$}
+\end{frame}
+
 
 %\textbf{Multivariate Taylor Expansion:} $$F(t)-F(s)=F^{\prime}(s)(t-s)+\frac{1}{2}F^{''} (s)(t-s)^2 + \frac{1}{3!}F^{'''}(t-s)^3+ \text{H.O.T}$$
 
