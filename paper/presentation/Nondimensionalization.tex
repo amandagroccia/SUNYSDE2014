@@ -12,8 +12,8 @@
 The initial model is
 
   \begin{align*}
-    \frac{dx}{dt} & = rx^2 \left(1-\frac{x}{K}\right) - \alpha xy, \\
-    \frac{dy}{dt} & = \rho y^2 \left(1-\frac{y}{L}\right) - \beta xy.
+    \frac{dx}{dt} & = rx^2 \left(1-\frac{x}{K}\right) - \alpha xy - \frac{x^2 \gamma_\circ}{x+D}, \\
+    \frac{dy}{dt} & = \rho y^2 \left(1-\frac{y}{L}\right) - \beta xy -\frac{y^2 \delta_\circ}{y+R}.
   \end{align*}
 	
 Let 
@@ -28,16 +28,16 @@ When you substitute and group terms the system becomes nondimensionalized.
 \begin{frame}
 After making the following substitutions: \\
 \begin{align*}
-		A = K, \\
-		B = L, \\
-		\tau = \frac{1}{\rho}.	
+		A &= K, \\
+		B &= L, \\
+		\tau &= \frac{1}{rK}.	
 \end{align*}
 
 The nondimensionalized system is:
 
 	\begin{align*}
-		\frac{d{x}}{dt} &= rx(1-x) - \alpha xy, \\
-		\frac{d{y}}{dt} &= y(1-y) - \beta xy.
+		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D}, \\
+    \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}
 	\end{align*}
 \end{frame}
 
