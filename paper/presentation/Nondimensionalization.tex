@@ -1,10 +1,10 @@
 \numberwithin{equation}{section}
 
-\section{Nondimensionalization}
-\begin{frame}
-  \frametitle{Outline}
-  \tableofcontents[ currentsection ]
-\end{frame}
+\subsection{Nondimensionalization}
+%\begin{frame}
+  %\frametitle{Outline}
+  %\tableofcontents[ currentsection ]
+%\end{frame}
 
 \begin{frame}
 \frametitle{Nondimensionalization}
@@ -41,6 +41,32 @@ The nondimensionalized system is:
 	\end{align*}
 \end{frame}
 
+\begin{frame}
+		What happens if we add noise?
+	\begin{align*}
+		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \text{``noise,''} \\
+    \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}+ \text{``noise.''}
+	\end{align*}
+\end{frame}
+
+\begin{frame}
+		If we add additive noise... 
+	\begin{align*}
+		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon \frac{dW}{dt}, \\
+    \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}+ \kappa \frac{dB}{dt}.
+	\end{align*}
+\end{frame}
+
+\begin{frame}
+		If we add proportional noise... 
+	\begin{align*}
+		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon x \frac{dW}{dt}, \\
+    \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}+ \kappa y \frac{dB}{dt}.
+	\end{align*}
+\end{frame}
+
+
+
 
 \begin{frame}
 \frametitle{Heun's Method}
@@ -60,8 +86,9 @@ The nondimensionalized system is:
    \frametitle{Heun's Method vs. Euler's Method - Simulation}
 For the DE $y'=r y$ on $[0,T]$,\\
 \vspace{1em}
-	\hspace{1.5em} Heun's:$\hspace{1em} \tilde{y}_{i+1} = y_i + \Delta t \ f(t_i, y_i)$ \\
-	\hspace{1.5em} Euler's:$\hspace{1em}\tilde{y}_{i+1} = y_i + \Delta t \ f(r, y_i)$ \\
+	%\hspace{1.5em} Heun's:$\hspace{1em} \tilde{y}_{i+1} = y_i + \Delta t \ f(t_i, y_i)$ \\
+		\hspace{1.5em} Heun's:$ \hspace{1em} y_{i+1} = y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(\tilde{y}_{i+1}, t_{i+1})\right]$ \vspace{1em} \\
+	\hspace{1.5em} Euler's:$\hspace{1em}\tilde{y}_{i+1} = y_i + \Delta t \ f(y_i, t_i)$ \\
 \begin{columns}[t]
     \column{.5\textwidth} 
     \includegraphics[width=6cm]{img/Heun500}
