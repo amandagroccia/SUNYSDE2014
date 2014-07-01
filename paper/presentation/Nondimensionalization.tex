@@ -41,7 +41,22 @@ The nondimensionalized system is:
 	\end{align*}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Phase Plane}
+
+  \vfill
+  
+  \begin{columns}
+    \column{.65\textwidth}
+       \includegraphics[height=7cm]{img/typeIPhasePlane}
+    \column{.35\textwidth}
+    \begin{itemize}
+    \item Four fixed points.
+    \item Two are unstable.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Noise}
 		What happens if we add noise?
 	\begin{align*}
 		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \text{``noise,''} \\
@@ -49,7 +64,7 @@ The nondimensionalized system is:
 	\end{align*}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Additive Noise}
 		If we add additive noise... 
 	\begin{align*}
 		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon \frac{dW}{dt}, \\
@@ -57,7 +72,7 @@ The nondimensionalized system is:
 	\end{align*}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Proportional Noise}
 		If we add proportional noise... 
 	\begin{align*}
 		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon x \frac{dW}{dt}, \\
