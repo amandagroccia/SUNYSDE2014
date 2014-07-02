@@ -16,12 +16,27 @@
 % Let p=\rho, a=\alpha, b=\beta, g=\gamma, d=\delta.
 %
 %% 
-N = 6000;
-T = 10;
-x0 = .65; y0 = .7;
+N = 300;
+T = 1;
+x0 = 1; y0 = 1;
 p = 1; 
 a = .5; b = .5;
-g = .3; d = .5;
+g = .5; d = .5;
 D = 5;  R = 5;
-[x,y] = Heun(N, T, x0, y0, p, a, b, g, d, R, D);
-plot(x,y,'r',x(1),y(1),'bo')
+%[x,y] = Heun(N, T, x0, y0, p, a, b, g, d, R, D);
+
+dt = T/N;
+%currentTime = 0;
+step = 1;
+x = zeros(N,1); y = zeros(N,1);
+x(1) = x0; y(1) = y0; %
+while (step <= N) %
+    [d1fx,d1fy] = pop(x(step), y(step), rho, alpha, beta, gamma, ...
+        delta, R, D);
+    x2 = x(step) + .5*dt*d1fx;
+    y2 = y(step) + .5*dt*d1fy;
+    [d2fx,d2fy] = pop(x2, y2, rho, alpha, beta, gamma, delta, R, D);
+    x(step+1) = x(step) + .5*dt*(d1fx + d2fx);
+    y(step+1) = y(step) + .5*dt*(d1fy + d2fy);
+    step = step + 1;
+end
