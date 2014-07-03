@@ -34,7 +34,7 @@ x1 <- seq(0, 1.1, by=.033)
 y2 <- x1
 vx <- numeric(length(x1))
 vy <- numeric(length(y2))
-dt <- 0.01;
+dt <- 0.015;
 for (x in x1)
 {
     lupe <- 0
