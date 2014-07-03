@@ -1,0 +1,25 @@
+function [x, iter]=newton(x, tol, maxiter)
+for (iter=1:maxiter)
+    xold=x;
+    [F,J]=fncn(xold);
+    n=numel(x);
+    x=xold(1,2:n)-J\F;
+    if(norm(x-xold,inf)<tol)
+        fprintf('Convergence to within tolerance in iter=%i .\n', iter)
+        return
+    end
+end
+end
+
+function [F,J]=fncn(x)
+% define parameters?
+x=x(1); y=x(2);
+f1=x*x*(1-x)-alpha*x*y-(gamma*x*x)/(x+D);
+f2=rho*y*y*(1-y)-beta*x*y-(delta*y*y)/(y+R);
+F=[f1;f2];
+df1dx=2*x-3*x*x-alpha*y-gamma*x*((x+2*D)/(x+D).^2);
+df1dy=
+df2dx=
+df2dy=
+J=[df1dx df1dy;df2dx df2dy];
+end
