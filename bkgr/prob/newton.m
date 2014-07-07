@@ -1,5 +1,7 @@
-function [x, J, iter]=newton(x, tol, maxiter, ...
-                             delta, gamma, rho, R, D, alpha, beta)
+function [x, J, iter]=newton(x, tol, maxiter) %, ...
+                             %delta, gamma, rho, R, D, alpha, beta)
+                             
+delta=.8; gamma=.85; rho=1; R=3; D=7; alpha=.9; beta=.2;
 
 for (iter=1:maxiter)
     xold=x;
