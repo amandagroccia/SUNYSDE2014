@@ -1,7 +1,9 @@
-function [x, J, iter]=newton(x, tol, maxiter)
+function [x, J, iter]=newton(x, tol, maxiter, ...
+                             delta, gamma, rho, R, D, alpha, beta)
+
 for (iter=1:maxiter)
     xold=x;
-    [F,J]=fncn(xold);
+    [F,J]=fncn(xold, delta, gamma, rho, R, D, alpha, beta);
     n=numel(x);
     x=xold-J\F;
     if(norm(x-xold,inf)<tol)
@@ -11,11 +13,7 @@ for (iter=1:maxiter)
 end
 end
 
-function [F,J]=fncn(xvec)
-delta = .4; gamma = .8;
-rho = 1;
-R = 3; D = 7;
-alpha = .2; beta =.2;
+function [F,J]=fncn(xvec, delta, gamma, rho, R, D, alpha, beta)
 
 x=xvec(1); y=xvec(2);
 f1=x*x*(1-x)-alpha*x*y-(gamma*x*x)/(x+D);
