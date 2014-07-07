@@ -1,9 +1,9 @@
-delta <- .4
-gamma <- .8
+delta <- .8
+gamma <- .85
 rho <- 1
 R <- 3
 D <- 7
-alpha <- .2
+alpha <- .9
 beta <-.2
 
 xmin <- 0
