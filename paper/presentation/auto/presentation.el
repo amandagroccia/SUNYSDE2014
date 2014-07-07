@@ -12,6 +12,6 @@
      ""
      "introduction"
      "BrownianMotion"
-     "Nondimensionalization"
-     "stochasticDEs")))
+     "Modeling"
+     "Nondimensionalization")))
 

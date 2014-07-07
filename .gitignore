@@ -5,4 +5,9 @@
 *.bbl
 *.blg
 *.nav
+*.toc
+*.pdf
+*.out
+presentation.pdf
+*.synctex.gz
 *~
