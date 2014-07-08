@@ -12,8 +12,8 @@ s32 <- p3*(1-p3)/z[3] #s3 squared
   
 l2 <- qchisq(.95,2) #finds l squared for the Chi Squared test 
 
-lci1 <- p1 - sqrt(s12*l2) #
-hci1 <- p1 + sqrt(s12*l2) 
+lci1 <- p1 - sqrt(s12*l2) #lower confidence interval
+hci1 <- p1 + sqrt(s12*l2) #higher confidence interval 
 print(paste("The confidence interval for p1 is from", lci1, "to", hci1,"."))
 
 lci2 <- p2 - sqrt(s22*l2)
