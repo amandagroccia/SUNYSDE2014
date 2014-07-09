@@ -67,8 +67,8 @@ void singleApprox(double x0, double y0,
         
         normalDistRand(stdDev,dw);
         
-        x[0] += f1(x[0], x[1], .3, .8, 9.0)*dt+upsilon*dw[0];
-        x[1] += f2(x[0], x[1], 0.5, 1.0, .7, 7.0)*dt+kappa*(dw[1]);
+        x[0] += f1(x[0], x[1], alpha, gamma, D)*dt+upsilon*dw[0];
+        x[1] += f2(x[0], x[1], beta, rho, delta, R)*dt+kappa*(dw[1]);
         
     }
     
@@ -79,7 +79,8 @@ int main(int argc,char **argv)
     int lupe;
 	/* Set the initial seed for the random number generator. */
 	srand48(time(NULL));
-    
+    double x[2];
+    double alpha = 0.4;
     
 	/* Call the routine, and the results are in the vector x. Print out the results.*/
 	//	printf("%f,%f\n",w[0],w[1]);
@@ -88,9 +89,11 @@ int main(int argc,char **argv)
     //fp = fopen("./shrimpResults.csv","w");
     printf("Ima gonna write something\n");
     fprintf(fp,"x\n");
-    for(lupe=0;lupe<10;++lupe)
+    for(lupe=0;lupe<45000;++lupe)
     {
-        fprintf(fp,"s1\n");
+        singleApprox(x[0], <#double y0#>,alpha, <#double beta#>, <#double gamma#>, <#double delta#>, <#double R#>, <#double D#>, <#double rho#>, x)
+        //fprintf(fp,"s1\n");
+        fprintf(fp,"%f,%f\n",x[0],x[1]);
     }
     fclose(fp);
     return(0);
