@@ -75,13 +75,23 @@ void singleApprox(double x0, double y0,
 
 int main(int argc,char **argv)
 {
+    int lupe;
 	/* Set the initial seed for the random number generator. */
 	srand48(time(NULL));
     
     
 	/* Call the routine, and the results are in the vector x. Print out the results.*/
 	//	printf("%f,%f\n",w[0],w[1]);
-    
+    FILE *fp;
+    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
+    //fp = fopen("./shrimpResults.csv","w");
+    printf("Ima gonna write something\n");
+    fprintf(fp,"x\n");
+    for(lupe=0;lupe<10;++lupe)
+    {
+        fprintf(fp,"s1\n");
+    }
+    fclose(fp);
     return(0);
     
     
