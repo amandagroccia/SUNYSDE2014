@@ -1,7 +1,6 @@
 y <- read.csv("sillydata.csv") #reads in the file (this file is made up)
 z <- table(as.factor(y$x)) #puts the numbers into a table for the different categories 
 N <- sum(z) #sums up the values for each category 
-
 #category 1: species 1 lives while species 2 dies out
 #category 2: species 2 lives while species 1 dies out
 #category 3: species 1 and species 2 lives
@@ -25,7 +24,7 @@ print(paste("The confidence interval for p1 is from", lci1, "to", hci1,"."))
 
 lci2 <- p2 - sqrt(s22*l2)
 hci2 <- p2 + sqrt(s22*l2)
-print(paste("The confidence interval for p2 is from", lci2, "to", hci2,","))
+print(paste("The confidence interval for p2 is from", lci2, "to", hci2,"."))
 
 lci3 <- p3 - sqrt(s32*l2)
 hci3 <- p3 + sqrt(s32*l2)
