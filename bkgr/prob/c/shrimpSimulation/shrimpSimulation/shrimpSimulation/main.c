@@ -40,12 +40,13 @@ double f2(double x, double y, double beta, double rho, double delta, double R)
 void singleApprox(double x0, double y0,
                   double alpha, double beta,
                   double gamma, double delta,
-                  double R,
+                  double R, double D,
+                  double rho,
                   double x[2])
 
 {
     int lupe=0;
-    int N=45000;
+    int N=10000;
     double T=3;
     double xinter[2];
     double dt = T/((double)N);
