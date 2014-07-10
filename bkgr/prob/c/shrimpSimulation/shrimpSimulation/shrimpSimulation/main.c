@@ -47,12 +47,12 @@ void singleApprox(double x0, double y0,
 {
     int lupe=0;
     int N=10000;
-    double T=3;
+    double T=6;
     double xinter[2];
     double dt = T/((double)N);
     double stdDev=sqrt(dt);
-    double kappa=1.0;
-    double upsilon=1.0;
+    double kappa=0.12;
+    double upsilon=0.1;
     double dw[2];
     
     x[0]=x0;
@@ -67,8 +67,8 @@ void singleApprox(double x0, double y0,
         
         normalDistRand(stdDev,dw);
         
-        x[0] += f1(x[0], x[1], .3, .8, 9.0)*dt+upsilon*dw[0];
-        x[1] += f2(x[0], x[1], 0.5, 1.0, .7, 7.0)*dt+kappa*(dw[1]);
+        x[0] += f1(x[0], x[1], alpha, gamma, D)*dt+upsilon*dw[0];
+        x[1] += f2(x[0], x[1], beta, rho, delta, R)*dt+kappa*(dw[1]);
         
     }
     
@@ -79,6 +79,17 @@ int main(int argc,char **argv)
     int lupe;
 	/* Set the initial seed for the random number generator. */
 	srand48(time(NULL));
+    double x[2];
+    double alpha = 0.5;
+    double rho = 1.0;
+    double beta = 0.5;
+    double R = 3.0;
+    double D = 7.0;
+    double x0 = 0.7;
+    double y0 = 0.2;
+    double gamma = 0.5;
+    double delta = 0.5;
+    
     
     
 	/* Call the routine, and the results are in the vector x. Print out the results.*/
@@ -86,11 +97,13 @@ int main(int argc,char **argv)
     FILE *fp;
     fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
     //fp = fopen("./shrimpResults.csv","w");
-    printf("Ima gonna write something\n");
+    //printf("Ima gonna write something\n");
     fprintf(fp,"x\n");
-    for(lupe=0;lupe<10;++lupe)
+    for(lupe=0;lupe<45000;++lupe)
     {
-        fprintf(fp,"s1\n");
+        singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
+        //fprintf(fp,"s1\n");
+        fprintf(fp,"%f,%f\n",x[0],x[1]);
     }
     fclose(fp);
     return(0);
