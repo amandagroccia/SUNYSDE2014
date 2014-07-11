@@ -38,21 +38,19 @@ MOVIE INSERT
 
 \begin{frame}{Confidence Intervals}
 In order to better analyze our data we want to calculate our confidence intervals. To do this we needed to come up with a formula to calculate the confidence intervals. \\
-$$\hat{\theta} - S(\hat{\theta}) L <= \theta <= \hat{\theta} + S(\hat{\theta}) L$$
+$$\hat{\theta} - S(\hat{\theta}) L \leq \theta \leq \hat{\theta} + S(\hat{\theta}) L$$
+\end{frame}
 
+\begin{frame}{Confidence Intervals}
 In order to figure out how many times to run the programs we had to calculate $N$. To do this we solved the following formula for $n_1$ and multiplied by the number of frequency tables we have.\\
-By letting $P_1 = \frac{1}{2}$ and Finding $L = 5.991465$ in R, we get:\\
+By letting $P_1 = \frac{1}{2}$ and finding $L = 5.991465$ in R, we get:\\
 
 $$\sqrt{\frac{P_1 (1-P_1)}{n_1}} L = .01$$ \\
 $$n_1 = \frac{L^2 P_1 (1-P_1)}{.0001}$$ \\
-After multiplying by $3$ (our number of frequency tables) we get: \\
-$N = 44935.9875$ \\
-From this we knew to run our program $45,000$ times. 
+After multiplying by $3$ \(our number of frequency tables\) we get: \\
+\begin{center} $N = 44935.9875$ \end{center} \\
+From this we knew to run our program $45,000$ times. \\
 
-
-
-
-Insert the calculation for N. \\
 Insert the what the frequency tables represent.\\
 Insert what each letter means... notation.\\ 
 \end{frame}
