@@ -98,7 +98,7 @@ int main(int argc,char **argv)
     fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
-    fprintf(fp,"x\n");
+    fprintf(fp,"x,y\n");
     for(lupe=0;lupe<45000;++lupe)
     {
         singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
