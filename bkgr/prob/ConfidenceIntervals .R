@@ -1,9 +1,30 @@
-y <- read.csv("sillydata.csv") #reads in the file (this file is made up)
-z <- table(as.factor(y$x)) #puts the numbers into a frequency table for the different categories 
-N <- sum(z) #sums up the values for each category 
+data <- read.csv("sillydata.csv") #reads in the file (this file is made up)
+N <- length(data$x)
+loop <- 1
+states <- character(N)
+
+#puts raw data into the different data files (s1,s2,s3)
+repeat
+  {
+    if (data$x[loop] < ?){
+      states[loop] <- "?"
+    }else if (data$y [loop] < ?) {
+      states [loop] <- "?"
+    }else {
+      states [loop] <- "?"
+    }
+    
+    loop <- loop +1
+    if (loop > N)
+      break
+  }
+data$states <- states 
+
 #category 1: species 1 lives while species 2 dies out
 #category 2: species 2 lives while species 1 dies out
 #category 3: species 1 and species 2 lives
+
+z <- table(as.factor(states)) #puts the numbers into a frequency table for the different categories 
 
 # calculates sample proportions 
 p1 <- z[1]/N #approximation of probability 1: the number of trials where species 1 lives divided by the whole population 
@@ -30,3 +51,4 @@ print(paste("The confidence interval for p2 is from", lci2, "to", hci2,"."))
 lci3 <- p3 - sqrt(s32*l2)
 hci3 <- p3 + sqrt(s32*l2)
 print(paste("The confidence interval for p3 is from", lci3, "to", hci3,"."))
+
