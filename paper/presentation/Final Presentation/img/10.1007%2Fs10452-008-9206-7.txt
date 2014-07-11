@@ -1,0 +1,28 @@
+%0 Journal Article
+%D 2009
+%@ 1386-2588
+%J Aquatic Ecology
+%V 43
+%N 2
+%R 10.1007/s10452-008-9206-7
+%T Mutual predation between and cannibalism within several freshwater gammarids: Dikerogammarus villosus versus one native and three invasives
+%U http://dx.doi.org/10.1007/s10452-008-9206-7
+%I Springer Netherlands
+%8 2009-06-01
+%K Invasive gammarids
+%K Dikerogammarus
+%K Intraguild predation
+%K Laboratory experiments
+%K 1:1 combinations
+%K Cannibalism
+%K Distribution
+%A Kinzler, Werner
+%A Kley, Axel
+%A Mayer, Gerd
+%A Waloszek, Dieter
+%A Maier, Gerhard
+%P 457-464
+%G English
+
+
+http://link.springer.com/article/10.1007%2Fs10452-008-9206-7#
