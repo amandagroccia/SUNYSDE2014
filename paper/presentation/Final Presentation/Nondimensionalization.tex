@@ -9,31 +9,7 @@
 \begin{frame}
 \frametitle{Nondimensionalization}
 
-The initial model is
-
-  \begin{align*}
-    \frac{dx}{dt} & = rx^2 \left(1-\frac{x}{K}\right) - \alpha xy - \frac{x^2 \gamma_\circ}{x+D}, \\
-    \frac{dy}{dt} & = \rho y^2 \left(1-\frac{y}{L}\right) - \beta xy -\frac{y^2 \delta_\circ}{y+R}.
-  \end{align*}
-	
-Let 
-\begin{align*}
-		& x \rightarrow A \hat{x} (s) \\
-		& y \rightarrow B \hat{y} (s) \\
-		& t \rightarrow \tau \cdot s
-\end{align*}
-When you substitute and group terms the system becomes nondimensionalized. 
-\end{frame}
-
-\begin{frame}
-After making the following substitutions: \\
-\begin{align*}
-		A &= K, \\
-		B &= L, \\
-		\tau &= \frac{1}{rK}.	
-\end{align*}
-
-The nondimensionalized system is:
+  The nondimensionalized system is:
 
 	\begin{align*}
 		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D}, \\
@@ -44,62 +20,87 @@ The nondimensionalized system is:
 \begin{frame}{Phase Plane}
 
   \vfill
-	
-	When we start with the initial parameters $\alpha = .2, \beta = .2, \gamma = .8, \delta = .4, \rho = 1, R = 3$ and $D = 7$ this is our phase plane. 
+
+
   
   \begin{columns}
-    \column{.65\textwidth}
-       \includegraphics[height=6cm]{img/RplotMain}
-    \column{.35\textwidth}
-    \begin{itemize}
-    \item Four fixed points.
-    \item Two are unstable.
-    \end{itemize}
+    \only<1> {
+      \column{.65\textwidth}
+      \includegraphics[height=6cm]{img/RplotMain}
+      \column{.35\textwidth}
+      $\alpha = .2, \beta = .2,
+      \gamma = .8, \delta = .4, \rho = 1, R = 3$ and $D = 7$ 
+
+      \begin{itemize}
+      \item Six fixed points.
+      \item Three are unstable.
+      \end{itemize}
+    }
+
+    \only<2> {
+      \column{.65\textwidth}
+      \includegraphics[height=6cm]{img/Rplot1} 
+      \column{.35\textwidth}
+      $\gamma = .85$ and $\delta = .8$ 
+      \begin{itemize}
+      \item Four fixed points.
+      \item Two are unstable.
+      \end{itemize}
+    }
+
+    \only<3> {
+      \column{.65\textwidth}
+      \includegraphics[height=6cm]{img/Rplot2} 
+      \column{.35\textwidth}
+      $\alpha = .9, \beta = .2, \gamma = .8$ and $\delta = .4$
+      \begin{itemize}
+      \item Four fixed points.
+      \item Two are unstable.
+      \end{itemize}
+    }
+
+    \only<4> {
+      \column{.65\textwidth}
+      \includegraphics[height=6cm]{img/Rplot3} 
+      \column{.35\textwidth}
+      $\alpha = .5, \beta = .5, \gamma = .8$ and $\delta = .4$ 
+      \begin{itemize}
+      \item Four fixed points.
+      \item Two are unstable.
+      \end{itemize}
+    }
+
+    \only<5> {
+      \column{.65\textwidth}
+      \includegraphics[height=6cm]{img/Rplot4} 
+      \column{.35\textwidth}
+      $\alpha = .95, \beta = .95, \gamma = .8$ and $\delta = .4$ 
+      \begin{itemize}
+      \item Three fixed points.
+      \item Two are unstable.
+      \end{itemize}
+    }
+
   \end{columns}
 \end{frame}
 
-\begin{frame}
- What happens if we change the parameters to $\gamma = .85$ and $\delta = .8$ \\
-      \begin{center} \includegraphics[height=7cm]{img/Rplot1} \end{center}
-\end{frame}
 
-\begin{frame}
- If we change the parameters to $\alpha = .9, \beta = .2, \gamma = .8$ and $\delta = .4$ \\
-     \begin{center}  \includegraphics[height=7cm]{img/Rplot2} \end{center}
-\end{frame}
 
-\begin{frame}
- If we change the parameters to $\alpha = .5, \beta = .5, \gamma = .8$ and $\delta = .4$ \\
-     \begin{center} \includegraphics[height=7cm]{img/Rplot3} \end{center}
-\end{frame}
-
-\begin{frame}
-	If we change the parameters to $\alpha = .95, \beta = .95, \gamma = .8$ and $\delta = .4$ \\
-     \begin{center} \includegraphics[height=7cm]{img/Rplot4} \end{center}
-\end{frame}
 
 \begin{frame}{Noise}
-		What happens if we add noise?
-	\begin{align*}
-		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \text{``noise,''} \\
-    \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}+ \text{``noise.''}
-	\end{align*}
-\end{frame}
 
-\begin{frame}{Additive Noise}
-		If we add additive noise... 
-	\begin{align*}
-		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon \frac{dW}{dt}, \\
+  Additive noise...
+  \begin{align*}
+    \frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon \frac{dW}{dt}, \\
     \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}+ \kappa \frac{dB}{dt}.
-	\end{align*}
-\end{frame}
+  \end{align*}
 
-\begin{frame}{Proportional Noise}
-		If we add proportional noise... 
-	\begin{align*}
-		\frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon x \frac{dW}{dt}, \\
+  Proportional noise...
+  \begin{align*}
+    \frac{dx}{dt} &= x^2 (1-x) - \alpha xy - \frac{\gamma_\circ x^2}{x+D} + \upsilon x \frac{dW}{dt}, \\
     \frac{dy}{dt} &= \rho y^2 (1-y) - \beta xy -\frac{\delta_\circ y^2}{y+R}+ \kappa y \frac{dB}{dt}.
-	\end{align*}
+  \end{align*}
+
 \end{frame}
 
 
