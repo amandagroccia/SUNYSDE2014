@@ -100,11 +100,24 @@ int main(int argc,char **argv)
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
     fprintf(fp,"x,y\n");
-    for(lupe=0;lupe<10000;++lupe)
+    
+    double gammaMin=0.0;
+    double gammaMax=1.0;
+    int numgamma=50;
+    double deltagamma=(gammaMax - gammaMin)/((double) numgamma);
+    
+    int lupe_gamma;
+        for(lupe_gamma = 0; lupe_gamma < numgamma; ++lupe_gamma)
+    {
+        gamma=gammaMin+((double)lupe_gamma)*deltagamma;
+        
+    for(lupe=0;lupe<45000;++lupe)
     {
         singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
         //fprintf(fp,"s1\n");
         fprintf(fp,"%f,%f\n",x[0],x[1]);
+      
+    }
     }
     fclose(fp);
     return(0);
