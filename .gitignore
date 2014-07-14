@@ -11,3 +11,5 @@
 presentation.pdf
 *.synctex.gz
 *~
+.RData
+.Rhistory
