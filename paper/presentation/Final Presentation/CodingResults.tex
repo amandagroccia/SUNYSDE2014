@@ -42,7 +42,7 @@
 	\end{itemize} 
 
 	\begin{align*}
-		Y_{i+1} = Y_i +b\delta t + \sigma \delta W_t + \frac{1}{2} \sigma \sigma_x \{(\delta W_t)^2 - \delta t\} 
+		Y_{i+1} = Y_i +b\Delta t + \sigma \Delta W_t + \frac{1}{2} \sigma \sigma_x \{(\Delta W_t)^2 - \Delta t\} 
 	\end{align*}
 
 \end{frame}
@@ -58,37 +58,21 @@ MOVIE INSERT
   \textbf{I have no idea what this means or what was done???}
 
   In order to better analyze our data we want to calculate our
-  confidence intervals. 
-  To do this we needed to come up with a formula to calculate them. \\
+  confidence intervals. To do this we needed to come up with a formula to calculate them. The following formula is what was used to find our confidence intervals. \\
 
   $$\hat{\theta} - S(\hat{\theta}) L \leq \theta \leq \hat{\theta} + S(\hat{\theta}) L$$ \\
+
+		Where $\hat{\theta}$ is the probability of each frequency table, \\
+		$S(\hat{\theta})$ is ... \textbf{I don't know how you want to put this into ``math terms''}, \\ 
+		$L$ is \textbf{I don't know how you want to put this into ``math terms''}.
 \end{frame}
 
 \begin{frame}{Experimental Design}
-
-  \textbf{What is $n_1$? Where is the ``following formula?''}
-
-  We need to estimate the number of trials. To do this we solved the following formula for $n_1$
-  and multiplied by the number of frequency tables we have.
-
+  We need to estimate the number of trials. To do this we solved the following formula for $n_1$, the number of species in each frequency table, and multiplied by the number of frequency tables. 
+	
 \vfill
 
-Our frequency tables are divided into three groups:
-\begin{itemize}
-	\item species 1 lives while species 2 dies out
-	\item species 2 lives while species 1 dies out
-	\item species 1 and species 2 lives
-\end{itemize}
-
-\vfill 
-
-\end{frame}
-
-\begin{frame}{Solving For The Number of Trials}
-
-  \textbf{You ``found'' L? Was it hiding?}
-
-  By letting $P_1 = \frac{1}{2}$ and finding $L = 5.991465$ in R, we get:
+By letting $P_1 = \frac{1}{2}$ and solving for $L = 5.991465$ in R, we get:
 
   $$\sqrt{\frac{P_1 (1-P_1)}{n_1}} \ L = .01$$ \\
   $$n_1 = \frac{L^2 P_1 (1-P_1)}{.0001}$$ \\
@@ -97,7 +81,20 @@ Our frequency tables are divided into three groups:
     $N = 44935.9875$ 
   \end{center} 
 
-  From this we knew to run our program $45,000$ times. 
+  From this we knew to run our programs $45,000$ times. 
+	
+\vfill
+
+\end{frame}
+
+\begin{frame}{Frequency Tables}
+
+		Our frequency tables are divided into three groups:
+\begin{itemize}
+	\item species 1 lives while species 2 dies out
+	\item species 2 lives while species 1 dies out
+	\item species 1 and species 2 lives
+\end{itemize}
 \end{frame}
 
 
