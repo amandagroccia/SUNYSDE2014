@@ -1,10 +1,10 @@
-delta <- .8
-gamma <- .85
+delta <- .4
+gamma <- .8
 rho <- 1
 R <- 3
 D <- 7
-alpha <- .9
-beta <-.2
+alpha <- .95
+beta <-.95
 
 xmin <- 0
 xmax <- 1.1
@@ -14,7 +14,7 @@ par(xpd=FALSE)
 x1 <- seq(xmin, xmax, by=.01)
 y1 <- (x1*(1-x1)-gamma*x1/(x1+D))/alpha     ### x null-cline
 plot(x1,y1, xlim=c(xmin, xmax),ylim=c(ymin, ymax),col=2,type="l",
-     main="Phase Plane for The Killer Shrimp",
+     #main="Phase Plane for The Killer Shrimp",
      xlab="Species x",ylab="Species y")
 points (c(0,0),c(0,1.1),col=2,type="l")
 
@@ -25,7 +25,7 @@ points (c(0,1.1),c(0,0),col=3,type="l")
 
 par(xpd=TRUE)
 
-legend (.8,1.26,c("x Nullcline","y Nullcline"),col=c(2,3), lty=c(1,1))
+legend (.4,1.4,c("x Nullcline","y Nullcline"),col=c(2,3), lty=c(1,1))
 
 vectorField <- function(x,y,alpha,beta,delta,gamma,rho,R,D)
     {

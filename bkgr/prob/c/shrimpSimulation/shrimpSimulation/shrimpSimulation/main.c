@@ -70,6 +70,9 @@ void singleApprox(double x0, double y0,
         x[0] += f1(x[0], x[1], alpha, gamma, D)*dt+upsilon*dw[0];
         x[1] += f2(x[0], x[1], beta, rho, delta, R)*dt+kappa*(dw[1]);
         
+        if (x[0]< 0.0) x[0] = 0.0;
+        if (x[1]< 0.0) x[1] = 0.0;
+            
     }
     
 }
