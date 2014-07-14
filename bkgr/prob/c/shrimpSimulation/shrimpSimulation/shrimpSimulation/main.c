@@ -46,8 +46,8 @@ void singleApprox(double x0, double y0,
 
 {
     int lupe=0;
-    int N=10000;
-    double T=6;
+    int N=1000;
+    double T=6.0;
     double xinter[2];
     double dt = T/((double)N);
     double stdDev=sqrt(dt);
@@ -58,17 +58,15 @@ void singleApprox(double x0, double y0,
     x[0]=x0;
     x[1]=y0;
     
-    while (lupe ++ < N)
+    while (lupe++ < N)
     {
         xinter[0]=x[0];
         xinter[1]=x[1];
-        x[0]=x0;
-        x[1]=y0;
         
         normalDistRand(stdDev,dw);
         
-        x[0] += f1(x[0], x[1], alpha, gamma, D)*dt+upsilon*dw[0];
-        x[1] += f2(x[0], x[1], beta, rho, delta, R)*dt+kappa*(dw[1]);
+        x[0] += f1(xinter[0], xinter[1], alpha, gamma, D)*dt+upsilon*dw[0];
+        x[1] += f2(xinter[0], xinter[1], beta, rho, delta, R)*dt+kappa*(dw[1]);
         
         if (x[0]< 0.0) x[0] = 0.0;
         if (x[1]< 0.0) x[1] = 0.0;
@@ -91,7 +89,7 @@ int main(int argc,char **argv)
     double x0 = 0.7;
     double y0 = 0.2;
     double gamma = 0.5;
-    double delta = 0.5;
+    double delta = 0.8;
     
     
     
@@ -102,7 +100,7 @@ int main(int argc,char **argv)
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
     fprintf(fp,"x,y\n");
-    for(lupe=0;lupe<45000;++lupe)
+    for(lupe=0;lupe<10000;++lupe)
     {
         singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
         //fprintf(fp,"s1\n");
