@@ -1,4 +1,4 @@
-data <- read.csv("sillydata.csv") #reads in the file (this file is made up)
+data <- read.csv("c/shrimpSimulation//shrimpSimulation//shrimpSimulation/shrimpResults.csv") #reads in the file (this file is made up)
 N <- length(data$x)
 loop <- 1
 states <- character(N)
