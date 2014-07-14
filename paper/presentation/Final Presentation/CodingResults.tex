@@ -34,16 +34,18 @@
 
 \begin{frame}{Milstein Method}
 
-    \textbf{This is not correct.}
-
 	\begin{itemize}
 		\item Technique for the approximate numerical solution of a stochastic differential equation
 		\item Increases accuracy by using It\^o's Formula by adding the second-order term
 	\end{itemize} 
+	
+	\vfill
+	
+Let $f_1(x_n,y_n) = f_1$ and $g_1(x_n,y_n) = g_1$
 
-	\begin{align*}
-		Y_{i+1} = Y_i +b\Delta t + \sigma \Delta W_t + \frac{1}{2} \sigma \sigma_x \{(\Delta W_t)^2 - \Delta t\} 
-	\end{align*}
+		$$X_{n+1} = X_n + f_1\Delta t + g_1 \Delta W_1 + g_1 \frac{\partial g_1}{\partial x}  \cdot \left(\frac{1}{2} \Delta W_1 ^2 - \frac{1}{2} \Delta t \right)$$
+	
+	\vfill
 
 \end{frame}
 
@@ -54,32 +56,30 @@ MOVIE INSERT
 \end{frame}
 
 \begin{frame}{Confidence Intervals}
-
-  \textbf{I have no idea what this means or what was done???}
-
-  In order to better analyze our data we want to calculate our
-  confidence intervals. To do this we needed to come up with a formula to calculate them. The following formula is what was used to find our confidence intervals. \\
-
+	
+	\vfill
+	
+We wanted to better analyze our model so we found a $95\%$ confidence interval, for our Chi Square distribution. A confidence interval is a range of values (interval) that act as good estimates of the unknown population parameter. 
+  
   $$\hat{\theta} - S(\hat{\theta}) L \leq \theta \leq \hat{\theta} + S(\hat{\theta}) L$$ \\
-
-		Where $\hat{\theta}$ is the probability of each frequency table, \\
-		$S(\hat{\theta})$ is ... \textbf{I don't know how you want to put this into ``math terms''}, \\ 
-		$L$ is \textbf{I don't know how you want to put this into ``math terms''}.
+		Where $\hat{\theta}$ is the probability of each fixed point within the frequency table and
+		$L$ is positive square root of the upper percentage point of the Chi Square distribution.
+		
+	\vfill
+		
 \end{frame}
 
 \begin{frame}{Experimental Design}
-  We need to estimate the number of trials. To do this we solved the following formula for $n_1$, the number of species in each frequency table, and multiplied by the number of frequency tables. 
+To estimate the number of trials we solved the following formula for $n_1$, the number of trails corresponding to first fixed point, we have a total of $3$. \\
 	
-\vfill
+	\vfill
 
-By letting $P_1 = \frac{1}{2}$ and solving for $L = 5.991465$ in R, we get:
+By letting $P_1 = \frac{1}{2}$ and $L = 5.991465$, we get:
 
   $$\sqrt{\frac{P_1 (1-P_1)}{n_1}} \ L = .01$$ \\
   $$n_1 = \frac{L^2 P_1 (1-P_1)}{.0001}$$ \\
-  After multiplying by $3$ (our number of frequency tables) we get: \\
-  \begin{center} 
-    $N = 44935.9875$ 
-  \end{center} 
+  After multiplying by $3$ (our number of fixed points) we get: \\
+  \begin{center} $N = 44935.9875$ \end{center} 
 
   From this we knew to run our programs $45,000$ times. 
 	
@@ -89,11 +89,11 @@ By letting $P_1 = \frac{1}{2}$ and solving for $L = 5.991465$ in R, we get:
 
 \begin{frame}{Frequency Tables}
 
-		Our frequency tables are divided into three groups:
+		Our frequency tables are divided into three fixed points:
 \begin{itemize}
-	\item species 1 lives while species 2 dies out
-	\item species 2 lives while species 1 dies out
-	\item species 1 and species 2 lives
+	\item species 1 lives while species 2 dies out, $n_1$
+	\item species 2 lives while species 1 dies out, $n_2$
+	\item species 1 and species 2 lives, $n_3$
 \end{itemize}
 \end{frame}
 
