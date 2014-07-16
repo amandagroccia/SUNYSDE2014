@@ -81,9 +81,9 @@ int main(int argc,char **argv)
 	/* Set the initial seed for the random number generator. */
 	srand48(time(NULL));
     double x[2];
-    double alpha = 0.5;
+    double alpha = 0.1;
     double rho = 1.0;
-    double beta = 0.5;
+    double beta = 0.11;
     double R = 3.0;
     double D = 7.0;
     double x0 = 0.7;
@@ -99,13 +99,41 @@ int main(int argc,char **argv)
     fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
-    fprintf(fp,"x,y\n");
-    for(lupe=0;lupe<10000;++lupe)
+    fprintf(fp,"x,y,gamma,delta\n");
+    
+    double gammaMin=0.0;
+    double gammaMax=2.0;
+    int numgamma=5;
+    double deltagamma=(gammaMax - gammaMin)/((double) numgamma);
+    int lupe_gamma;
+    
+    double deltaMin=0.0;
+    double deltaMax=2.0;
+    int numdelta=5;
+    double deltadelta=(deltaMax - deltaMin)/((double) numdelta);
+    int lupe_delta;
+
+
+    for(lupe_delta = 0; lupe_delta <= numdelta; ++lupe_delta)
     {
-        singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
-        //fprintf(fp,"s1\n");
-        fprintf(fp,"%f,%f\n",x[0],x[1]);
+        delta=deltaMin+((double)lupe_delta)*deltadelta;
+        printf("Delta: %f\n",delta);
+      
+        for(lupe_gamma = 0; lupe_gamma <= numgamma; ++lupe_gamma)
+        {
+            gamma=gammaMin+((double)lupe_gamma)*deltagamma;
+            printf("Gamma: %f\n",gamma);
+        
+            for(lupe=0;lupe<45000;++lupe)
+            {
+                singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
+                //fprintf(fp,"s1\n");
+                fprintf(fp,"%f,%f,%f,%f\n",x[0],x[1],gamma,delta);
+      
+            }
+        }
     }
+    
     fclose(fp);
     return(0);
     
