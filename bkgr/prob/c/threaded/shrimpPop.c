@@ -17,13 +17,12 @@
 #include <time.h>
 
 #define OUTPUT_FILE "./shrimpPopMulNoise.csv"
-
-#define DEFAULT_FILE "threaded_trial"
 #define NUMBER_THREADS 2
 //#define DEBUG
 
 
-/* create a mutex that is used to protect the writing of the data to the file. */
+// create a mutex that is used to protect the writing of the data to
+// the file.
 std::mutex writeToFile;
 
 
