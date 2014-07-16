@@ -91,3 +91,7 @@ levelplot(yMeans ~ gammaVals*deltaVals,contour=TRUE,
           col.regions = colorRampPalette(c("red", "green","blue")),
           main="Mean Y")
 
+
+gamma<-gammaLevels[2]
+delta<-deltaLevels[4]
+hist(data$x[(data$gammaFactor==gamma) & (data$deltaFactor==delta)])
