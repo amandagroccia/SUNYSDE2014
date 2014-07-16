@@ -227,6 +227,7 @@
 				7C3463B4196D88AE002D2A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
