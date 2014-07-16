@@ -1,3 +1,5 @@
+clear all
+
 delta=.8; gamma=.5; rho=1; R=3; D=7; alpha=.5; beta=.5; upsilon=.1; kappa=.12;
 xzero = .7;
 yzero = .2;
@@ -6,7 +8,7 @@ s=10000;
 i=1;
 result=zeros(2,s);
 while (i<=s)
-    T = 6; N = 2^9; dt = T/N;
+    T = 6; N = 1000; dt = T/N;
     dW = sqrt(dt).*randn(2,N+1);         % Brownian increments
 
     x=zeros(2,N+1);
@@ -30,17 +32,13 @@ while (i<=s)
 %         xtemp = xtemp+dt*[f1n;f2n]+[g1n*dW(1,j);g2n*dW(2,j)]+...
 %             [dg1dx*g1n*.5*((dW(1,j))^2-dt);0]+[0;dg2dy*g2n*.5*(((dW(2,j))^2)-dt)];
 
+        if (xtemp(1,1) < 0)
+            xtemp(1,1)=0;
+        end
+        if (xtemp(2,1) < 0)
+            xtemp(2,1)=0;
+        end
         x([1,2],j)=xtemp;
-    end
-    j=1;
-    while (j <= N+1)
-        if (x(1,j) < 0)
-            x(1,j)=0;
-        end
-        if (x(2,j) < 0)
-            x(2,j)=0;
-        end
-        j=j+1;
     end
     result([1,2],i)=x([1,2],N+1);
     i=i+1;
