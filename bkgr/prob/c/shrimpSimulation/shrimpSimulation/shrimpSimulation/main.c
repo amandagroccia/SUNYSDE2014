@@ -51,8 +51,8 @@ void singleApprox(double x0, double y0,
     double xinter[2];
     double dt = T/((double)N);
     double stdDev=sqrt(dt);
-    double kappa=0.12;
-    double upsilon=0.1;
+    double kappa=0.06;
+    double upsilon=0.05;
     double dw[2];
     
     x[0]=x0;
@@ -95,19 +95,19 @@ int main(int argc,char **argv)
     
 	/* Call the routine, and the results are in the vector x. Print out the results.*/
 	//	printf("%f,%f\n",w[0],w[1]);
-    //FILE *fp;
-    //fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
-    //fp = fopen("./shrimpResults.csv","w");
-    //printf("Ima gonna write something\n");
-    //fprintf(fp,"x,y,gamma,delta\n");
-    
-    /* Call the routine, and the results are in the vector x. Print out the results.*/
-	//	printf("%f,%f\n",w[0],w[1]);
     FILE *fp;
-    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults2.csv","w");
+    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
     fprintf(fp,"x,y,gamma,delta\n");
+    
+    /* Call the routine, and the results are in the vector x. Print out the results.*/
+	//	printf("%f,%f\n",w[0],w[1]);
+    //FILE *fp;
+    //fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults2.csv","w");
+    //fp = fopen("./shrimpResults.csv","w");
+    //printf("Ima gonna write something\n");
+    //fprintf(fp,"x,y,gamma,delta\n");
     
     
     
