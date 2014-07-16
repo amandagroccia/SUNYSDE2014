@@ -86,8 +86,8 @@ int main(int argc,char **argv)
     double beta = 0.11;
     double R = 3.0;
     double D = 7.0;
-    double x0 = 0.7;
-    double y0 = 0.2;
+    double x0 = 0.2;
+    double y0 = 0.8;
     double gamma = 0.5;
     double delta = 0.8;
     
@@ -95,11 +95,21 @@ int main(int argc,char **argv)
     
 	/* Call the routine, and the results are in the vector x. Print out the results.*/
 	//	printf("%f,%f\n",w[0],w[1]);
+    //FILE *fp;
+    //fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
+    //fp = fopen("./shrimpResults.csv","w");
+    //printf("Ima gonna write something\n");
+    //fprintf(fp,"x,y,gamma,delta\n");
+    
+    /* Call the routine, and the results are in the vector x. Print out the results.*/
+	//	printf("%f,%f\n",w[0],w[1]);
     FILE *fp;
-    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
+    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults2.csv","w");
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
     fprintf(fp,"x,y,gamma,delta\n");
+    
+    
     
     double gammaMin=0.0;
     double gammaMax=2.0;
