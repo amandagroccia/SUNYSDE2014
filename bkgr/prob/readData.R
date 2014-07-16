@@ -80,6 +80,7 @@ for (delta in deltaLevels)
 print("making a contour plot for the x means")
 levelplot(xMeans ~ gammaVals*deltaVals,contour=TRUE,
           xlab=expression(gamma),ylab=expression(delta),
+          col.regions = colorRampPalette(c("red", "green","blue")),
           main="Mean X")
 
 ## Plot a contour plot of the means for y for different values of
@@ -87,5 +88,6 @@ levelplot(xMeans ~ gammaVals*deltaVals,contour=TRUE,
 print("making a contour plot for the y means")
 levelplot(yMeans ~ gammaVals*deltaVals,contour=TRUE,
           xlab=expression(gamma),ylab=expression(delta),
+          col.regions = colorRampPalette(c("red", "green","blue")),
           main="Mean Y")
 
