@@ -20,7 +20,7 @@
 
 #define DEFAULT_FILE "threaded_trial"
 #define NUMBER_THREADS 2
-#define DEBUG
+//#define DEBUG
 
 
 /* create a mutex that is used to protect the writing of the data to the file. */
@@ -84,6 +84,7 @@ void singleApprox(double x0, double y0,
 				  std::ofstream* dataFile)
 
 {
+	int outerLupe=0;
     int lupe=0;
     int N=1000;
     double T=6.0;
@@ -94,31 +95,41 @@ void singleApprox(double x0, double y0,
     double upsilon=0.05;
     double dw[2];
     
-    x[0]=x0;
-    x[1]=y0;
-    
-    while (lupe++ < N)
-    {
-        xinter[0]=x[0];
-        xinter[1]=x[1];
-        
-        normalDistRand(stdDev,dw);
-        
-        x[0] += f1(xinter[0], xinter[1], alpha, gamma, D)*dt+upsilon*dw[0];
-        x[1] += f2(xinter[0], xinter[1], beta, rho, delta, R)*dt+kappa*(dw[1]);
-        
-        if (x[0]< 0.0) x[0] = 0.0;
-        if (x[1]< 0.0) x[1] = 0.0;
-            
-    }
 
-	printResultsCSV(x,gamma,delta,dataFile);
+	for(outerLupe=0;outerLupe<45000;++outerLupe)
+		{
+
+
+			x[0]=x0;
+			x[1]=y0;
+    
+			for (lupe=0;lupe < N;++lupe)
+				{
+					xinter[0]=x[0];
+					xinter[1]=x[1];
+        
+					normalDistRand(stdDev,dw);
+        
+					x[0] += f1(xinter[0], xinter[1], alpha, gamma, D)*dt +
+						upsilon*xinter[0]*dw[0] +
+						upsilon*upsilon*xinter[0]*0.5*(dw[0]*dw[0]-dt);
+					x[1] += f2(xinter[0], xinter[1], beta, rho, delta, R)*dt +
+						kappa*xinter[1]*dw[1] +
+						kappa*kappa*xinter[1]*0.5*(dw[1]*dw[1]-dt);
+
+					if (x[0]< 0.0) x[0] = 0.0;
+					if (x[1]< 0.0) x[1] = 0.0;
+            
+				}
+
+			printResultsCSV(x,gamma,delta,dataFile);
+
+		}
     
 }
 
 int main(int argc,char **argv)
 {
-    int lupe;
 	/* Set the initial seed for the random number generator. */
 	srand48(time(NULL));
     double x[2];
@@ -170,35 +181,38 @@ int main(int argc,char **argv)
             printf("Gamma: %f\n",gamma);
 
         
-            for(lupe=0;lupe<45000;++lupe)
+			if(numberThreads >= NUMBER_THREADS)
 				{
-
-					if(numberThreads >= NUMBER_THREADS)
+					// There are too many threads. Wait for each run to end.
+					while(numberThreads>0)
 						{
-							// There are too many threads. Wait for each run to end.
-							while(numberThreads>0)
-								{
 #ifdef DEBUG
-									std::cout << "Waiting on thread " << simulation[numberThreads-1].get_id() 
-											  << std::endl;
+							std::cout << "Waiting on thread " 
+									  << simulation[numberThreads-1].get_id() 
+									  << std::endl;
 #endif
-									simulation[--numberThreads].join();
-								}
+							simulation[--numberThreads].join();
 						}
-
-
-					// Make this run a separate thread.
-					simulation[numberThreads++] = 
-						std::thread(singleApprox,
-									x0, y0, 
-									alpha, beta, 
-									gamma, delta, 
-									R, D, rho, x, 
-									&dataFile);
-					
 				}
+
+
+			// Make this run a separate thread.
+			simulation[numberThreads++] = std::thread(singleApprox,
+													  x0, y0, 
+													  alpha, beta, 
+													  gamma, delta, 
+													  R, D, rho, x, 
+													  &dataFile);
+					
         }
     }
+
+	while(numberThreads>0)
+		{
+			// close all remaining threads
+			simulation[--numberThreads].join();
+		}
+
     
 	dataFile.close();
     return(0);
