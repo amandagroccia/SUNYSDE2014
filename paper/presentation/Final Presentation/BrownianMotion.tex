@@ -92,24 +92,6 @@
 \end{definition}
 \end{frame}
 
-
-\begin{frame}
-   \frametitle{Monte Carlo Simulation - Test Case}
-
-   Describe the simulation.
-
-\end{frame}
-
-\begin{frame}{Monte Carlo Simulation - Results}
-
-Carrie inserts her results here. 
-
-\end{frame}
-
-
-
-
-
 \subsection{It\^o's Formula}
 
 \begin{frame}
@@ -136,4 +118,67 @@ It\^o's Formula is used in It\^o Calculus to find the differential of a time-dep
 \vfill
 \end{frame}
 
+\subsection{Approximations}
 
+\begin{frame}{Milstein Method}
+
+	\begin{itemize}
+		\item Technique for the approximate numerical solution of a stochastic differential equation
+		\item Increases accuracy by using It\^o's Formula by adding the second-order term
+	\end{itemize} 
+	
+	\vfill
+	
+	For the differential equation: $dx = f(x) dt + g(x) dW$ 
+	
+		$$X_{n+1} = X_n + f(X_n)\Delta t + g(X_n) \Delta W_n + g(X_n) \frac{\partial g(X_n)}{\partial x}  \cdot \left(\frac{1}{2} \Delta W_n ^2 - \frac{1}{2} \Delta t \right)$$
+	
+	\vfill
+
+\end{frame}
+
+\begin{frame}{Full Approximations}
+Talk about test case... NO MOVIE HERE 
+\end{frame}
+
+\begin{frame}{Frequency Tables}
+
+Our frequency tables are divided into three fixed points: 
+
+\begin{itemize}
+	\item species 1 lives while species 2 dies out, $n_1$
+	\item species 2 lives while species 1 dies out, $n_2$
+	\item species 1 and species 2 lives, $n_3$
+\end{itemize}
+We can define an approximate $\chi^2$ distribution as:
+$$ \chi^2 \approx \frac{\left(n_1 - \mu_{n_1}\right)^2}{N P_1 (1 - P_1)} + 
+                  \frac{\left(n_2 - \mu_{n_2}\right)^2}{N P_2 (1 - P_2)} +
+									\frac{\left(n_3 - \mu_{n_3}\right)^2}{N P_3 (1 - P_3)}$$
+\end{frame}
+
+ 
+\begin{frame}{Calculating $N$}
+	
+	\vfill
+	
+	We need to estimate the number of runs required for a Monte Carlo simulation so we used the confidence intervals and solve for $N$. \\
+	The confidence interval is $\hat{P_1}$ - error to $\hat{P_1}$ + error \\
+	Where error is $\frac{\chi^2}{12N}$ \\
+	We assume the error is approximately $.01$ 
+		
+	\vfill
+		
+\end{frame}
+
+\begin{frame}
+   \frametitle{Monte Carlo Simulation - Test Case}
+
+   Describe the simulation.
+
+\end{frame}
+
+\begin{frame}{Monte Carlo Simulation - Results}
+
+Carrie inserts her results here. 
+
+\end{frame}

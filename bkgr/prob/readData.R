@@ -59,16 +59,16 @@ for (delta in deltaLevels)
                 ## Calc. the mean and std. of x for the different values of
                 ## delta and gamma.
                 xMeans  <- c(xMeans,mean(data$x[(data$gammaFactor==gamma) &
-                                                (data$gammaFactor==gamma)]))
+                                                (data$deltaFactor==delta)]))
                 xStdDev <- c(xStdDev, sd(data$x[(data$gammaFactor==gamma) &
-                                                (data$gammaFactor==gamma)]))
+                                                (data$deltaFactor==delta)]))
 
                 ## Calc. the mean and std. of y for the different values of
                 ## delta and gamma.
                 yMeans  <- c(yMeans,mean(data$y[(data$gammaFactor==gamma) &
-                                                (data$gammaFactor==gamma)]))
+                                                (data$deltaFactor==delta)]))
                 yStdDev <- c(yStdDev, sd(data$y[(data$gammaFactor==gamma) &
-                                                (data$gammaFactor==gamma)]))
+                                                (data$deltaFactor==delta)]))
 
                 gammaVals <- c(gammaVals,as.double(gamma))
                 deltaVals <- c(deltaVals,as.double(delta))
@@ -80,6 +80,7 @@ for (delta in deltaLevels)
 print("making a contour plot for the x means")
 levelplot(xMeans ~ gammaVals*deltaVals,contour=TRUE,
           xlab=expression(gamma),ylab=expression(delta),
+          col.regions = colorRampPalette(c("blue","white")),
           main="Mean X")
 
 ## Plot a contour plot of the means for y for different values of
@@ -87,5 +88,10 @@ levelplot(xMeans ~ gammaVals*deltaVals,contour=TRUE,
 print("making a contour plot for the y means")
 levelplot(yMeans ~ gammaVals*deltaVals,contour=TRUE,
           xlab=expression(gamma),ylab=expression(delta),
+          col.regions = colorRampPalette(c("blue","white")),
           main="Mean Y")
 
+
+gamma<-gammaLevels[2]
+delta<-deltaLevels[4]
+hist(data$x[(data$gammaFactor==gamma) & (data$deltaFactor==delta)])
