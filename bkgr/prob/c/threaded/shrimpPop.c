@@ -16,8 +16,8 @@
 #include <math.h>
 #include <time.h>
 
-#define OUTPUT_FILE "./shrimpPopMulNoise.csv"
-#define NUMBER_THREADS 2
+#define OUTPUT_FILE "./shrimpPopMulNoiseFULL.csv"
+#define NUMBER_THREADS 4
 //#define DEBUG
 
 
@@ -158,13 +158,13 @@ int main(int argc,char **argv)
     
     double gammaMin=0.0;
     double gammaMax=2.0;
-    int numgamma=5;
+    int numgamma=50;
     double deltagamma=(gammaMax - gammaMin)/((double) numgamma);
     int lupe_gamma;
     
     double deltaMin=0.0;
     double deltaMax=2.0;
-    int numdelta=5;
+    int numdelta=50;
     double deltadelta=(deltaMax - deltaMin)/((double) numdelta);
     int lupe_delta;
 
