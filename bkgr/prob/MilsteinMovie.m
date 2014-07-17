@@ -16,7 +16,7 @@ yzero = .2;
 clf;
 subplot(2,1,1)
 hold on
-axis([0 T 0 1.8])
+axis([0 T 0 1])
 plot([0],[0],'r-',[0],[0],'b-',[0],[0],'g-')
 legend('Run 1','Run 2','Run 3','Location','NorthEast');
 legend boxoff
