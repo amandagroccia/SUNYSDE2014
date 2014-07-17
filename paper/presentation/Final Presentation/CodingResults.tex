@@ -30,44 +30,7 @@
 
 
 
-\subsection{Approximations}
 
-\begin{frame}{Milstein Method}
-
-	\begin{itemize}
-		\item Technique for the approximate numerical solution of a stochastic differential equation
-		\item Increases accuracy by using It\^o's Formula by adding the second-order term
-	\end{itemize} 
-	
-	\vfill
-	
-Let $f_1(x_n,y_n) = f_1$, $g_1(x_n,y_n) = g_1$ and $W_1(x_n,y_n) = W_1$
-
-		$$X_{n+1} = X_n + f_1\Delta t + g_1 \Delta W_1 + g_1 \frac{\partial g_1}{\partial x}  \cdot \left(\frac{1}{2} \Delta W_1 ^2 - \frac{1}{2} \Delta t \right)$$
-	
-	\vfill
-
-\end{frame}
-
-\begin{frame}{Full Approximations}
-RESULTS \\
-Because this is a random variable each time it's run it's different. \\
-MOVIE INSERT 
-\end{frame}
-
-\begin{frame}{Confidence Intervals}
-	
-	\vfill
-	
-We wanted to better analyze our model so we found a $95\%$ confidence interval, for our Chi Square distribution. A confidence interval is a range of values (interval) that act as good estimates of the unknown population parameter. 
-  
-  $$\hat{\theta} - S(\hat{\theta}) L \leq \theta \leq \hat{\theta} + S(\hat{\theta}) L$$ \\
-		Where $\hat{\theta}$ is the probability of each fixed point within the frequency table and
-		$L$ is positive square root of the upper percentage point of the Chi Square distribution.
-		
-	\vfill
-		
-\end{frame}
 
 \begin{frame}{Experimental Design}
 To estimate the number of trials we solved the following formula for $n_1$, the number of trails corresponding to first fixed point, we have a total of $3$. \\
@@ -95,6 +58,7 @@ By letting $P_1 = \frac{1}{2}$ and $L = 5.991465$, we get:
 	\item species 2 lives while species 1 dies out, $n_2$
 	\item species 1 and species 2 lives, $n_3$
 \end{itemize}
+
 \end{frame}
 
 
