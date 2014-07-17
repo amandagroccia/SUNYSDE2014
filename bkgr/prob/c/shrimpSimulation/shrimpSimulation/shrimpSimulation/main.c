@@ -95,31 +95,31 @@ int main(int argc,char **argv)
     
 	/* Call the routine, and the results are in the vector x. Print out the results.*/
 	//	printf("%f,%f\n",w[0],w[1]);
-    FILE *fp;
-    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
-    //fp = fopen("./shrimpResults.csv","w");
-    //printf("Ima gonna write something\n");
-    fprintf(fp,"x,y,gamma,delta\n");
-    
-    /* Call the routine, and the results are in the vector x. Print out the results.*/
-	//	printf("%f,%f\n",w[0],w[1]);
     //FILE *fp;
-    //fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults2.csv","w");
+    //fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults.csv","w");
     //fp = fopen("./shrimpResults.csv","w");
     //printf("Ima gonna write something\n");
     //fprintf(fp,"x,y,gamma,delta\n");
+    
+    /* Call the routine, and the results are in the vector x. Print out the results.*/
+	//	printf("%f,%f\n",w[0],w[1]);
+    FILE *fp;
+    fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults2.csv","w");
+    //fp = fopen("./shrimpResults2.csv","w");
+    //printf("Ima gonna write something\n");
+    fprintf(fp,"x,y,gamma,delta\n");
     
     
     
     double gammaMin=0.0;
     double gammaMax=2.0;
-    int numgamma=5;
+    int numgamma=50;
     double deltagamma=(gammaMax - gammaMin)/((double) numgamma);
     int lupe_gamma;
     
     double deltaMin=0.0;
     double deltaMax=2.0;
-    int numdelta=5;
+    int numdelta=50;
     double deltadelta=(deltaMax - deltaMin)/((double) numdelta);
     int lupe_delta;
 
