@@ -138,7 +138,26 @@ It\^o's Formula is used in It\^o Calculus to find the differential of a time-dep
 \end{frame}
 
 \begin{frame}{Full Approximations}
-Talk about test case... NO MOVIE HERE 
+For a 1D test run of Milstein, we approximated the solution to the differential equation $$dx = \lambda x dt + \mu x dW.$$
+We let $\lambda = 2$, $\mu = 1$, and $x_0 = 1$ and approximated over the interval $T=[0,1]$ with $dt = 2^{-8}$. 
+
+\vspace{2em}
+
+For a Monte Carlo simulation, we run $5,000$ simulations of the 1D Milstein approximation and record the value after the final iteration, $\hat{X}(T)$. 
+\end{frame}
+
+
+%\begin{frame}
+%   \frametitle{Monte Carlo Simulation - Test Case}
+%
+%   We run $5,000$ simulations of the 1D Milstein approximation and record the value after the final iteration, $\hat{X}(T)$. 
+%
+%\end{frame}
+
+\begin{frame}{Monte Carlo Simulation - Results}
+
+Carrie inserts her results here. 
+
 \end{frame}
 
 \begin{frame}{Frequency Tables}
@@ -161,24 +180,13 @@ $$ \chi^2 \approx \frac{\left(n_1 - \mu_{n_1}\right)^2}{N P_1 (1 - P_1)} +
 	
 	\vfill
 	
-	We need to estimate the number of runs required for a Monte Carlo simulation so we used the confidence intervals and solve for $N$. \\
-	The confidence interval is $\hat{P_1}$ - error to $\hat{P_1}$ + error \\
-	Where error is $\frac{\chi^2}{12N}$ \\
-	We assume the error is approximately $.01$ 
+	We need to estimate the number of runs required for a Monte Carlo simulation, in order to do this we need to use the confidence intervals and solve for $N$. 
+	
+	\vfill
+	
+	The confidence interval is $\left(\hat{P_1} - \epsilon , \hat{P_1} + \epsilon \right)$ \\
+	Where $$\epsilon =\frac{\chi^2}{12N}$$ and we assumed the error is approximately $.01$ .
 		
 	\vfill
 		
-\end{frame}
-
-\begin{frame}
-   \frametitle{Monte Carlo Simulation - Test Case}
-
-   Describe the simulation.
-
-\end{frame}
-
-\begin{frame}{Monte Carlo Simulation - Results}
-
-Carrie inserts her results here. 
-
 \end{frame}

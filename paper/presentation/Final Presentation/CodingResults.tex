@@ -7,9 +7,11 @@
 %\end{frame}
 
 \begin{frame}{Description of Simulations}
-
-  Describe what was done for the following two sets of histograms.
-
+We wrote code in C and MatLab that approximated our two-dimensional system of equations. 
+	\begin{itemize}
+		\item Ran both languages for $N = 10,000$ as a check
+		\item Ran C for $N =45,000$ because MatLab is SLOW!
+	\end{itemize}
 \end{frame}
 
 
@@ -18,47 +20,14 @@
 
   \begin{columns}[t]
     \column{.5\textwidth} 
-    %\includegraphics[width=6cm]{img/Heun500}
-    histogram from Matlab simulations
+    \includegraphics[width=6cm]{img/shrimpHistMATLAB} \\
+		\includegraphics[width=5.5cm]{img/histSummML}
+    \begin{center} Histogram from Matlab simulations \end{center}
     \column{.5\textwidth}
-    %\includegraphics[width=6cm]{img/Heun10000}
-    histogram from C simulations
+    \includegraphics[width=6cm]{img/Rplot} \\
+		\includegraphics[width=5.5cm]{img/sumAMAN}
+    \begin{center} Histogram from C simulations \end{center}
   \end{columns}
 
 
 \end{frame}
-
-
-
-
-
-\begin{frame}{Experimental Design}
-To estimate the number of trials we solved the following formula for $n_1$, the number of trails corresponding to first fixed point, we have a total of $3$. \\
-	
-	\vfill
-
-By letting $P_1 = \frac{1}{2}$ and $L = 5.991465$, we get:
-
-  $$\sqrt{\frac{P_1 (1-P_1)}{n_1}} \ L = .01$$ \\
-  $$n_1 = \frac{L^2 P_1 (1-P_1)}{.0001}$$ \\
-  After multiplying by $3$ (our number of fixed points) we get: \\
-  \begin{center} $N = 44935.9875$ \end{center} 
-
-  From this we knew to run our programs $45,000$ times. 
-	
-\vfill
-
-\end{frame}
-
-\begin{frame}{Frequency Tables}
-
-		Our frequency tables are divided into three fixed points:
-\begin{itemize}
-	\item species 1 lives while species 2 dies out, $n_1$
-	\item species 2 lives while species 1 dies out, $n_2$
-	\item species 1 and species 2 lives, $n_3$
-\end{itemize}
-
-\end{frame}
-
-
