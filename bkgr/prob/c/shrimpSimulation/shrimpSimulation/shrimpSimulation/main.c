@@ -105,44 +105,44 @@ int main(int argc,char **argv)
 	//	printf("%f,%f\n",w[0],w[1]);
     //FILE *fp;
     //fp = fopen("/Users/amandagroccia/Documents/SUNYSDE2014/bkgr/prob/c/shrimpSimulation/shrimpSimulation/shrimpSimulation/shrimpResults2.csv","w");
-    //fp = fopen("./shrimpResults.csv","w");
+    //fp = fopen("./shrimpResults2.csv","w");
     //printf("Ima gonna write something\n");
     //fprintf(fp,"x,y,gamma,delta\n");
     
     
     
-    double gammaMin=0.0;
-    double gammaMax=2.0;
-    int numgamma=5;
-    double deltagamma=(gammaMax - gammaMin)/((double) numgamma);
-    int lupe_gamma;
+    //double gammaMin=0.0;
+    //double gammaMax=2.0;
+    //int numgamma=1;
+    //double deltagamma=(gammaMax - gammaMin)/((double) numgamma);
+    //int lupe_gamma;
     
-    double deltaMin=0.0;
-    double deltaMax=2.0;
-    int numdelta=5;
-    double deltadelta=(deltaMax - deltaMin)/((double) numdelta);
-    int lupe_delta;
+    //double deltaMin=0.0;
+    //double deltaMax=2.0;
+    //int numdelta=1;
+    //double deltadelta=(deltaMax - deltaMin)/((double) numdelta);
+    //int lupe_delta;
 
 
-    for(lupe_delta = 0; lupe_delta <= numdelta; ++lupe_delta)
-    {
-        delta=deltaMin+((double)lupe_delta)*deltadelta;
-        printf("Delta: %f\n",delta);
+    //for(lupe_delta = 0; lupe_delta <= numdelta; ++lupe_delta)
+    //{
+        //delta=deltaMin+((double)lupe_delta)*deltadelta;
+        //printf("Delta: %f\n",delta);
       
-        for(lupe_gamma = 0; lupe_gamma <= numgamma; ++lupe_gamma)
-        {
-            gamma=gammaMin+((double)lupe_gamma)*deltagamma;
-            printf("Gamma: %f\n",gamma);
+        //for(lupe_gamma = 0; lupe_gamma <= numgamma; ++lupe_gamma)
+        //{
+            //gamma=gammaMin+((double)lupe_gamma)*deltagamma;
+            //printf("Gamma: %f\n",gamma);
         
-            for(lupe=0;lupe<45000;++lupe)
+        for(lupe=0;lupe<10000;++lupe)
             {
                 singleApprox(x0, y0, alpha, beta, gamma, delta, R, D, rho, x);
                 //fprintf(fp,"s1\n");
                 fprintf(fp,"%f,%f,%f,%f\n",x[0],x[1],gamma,delta);
       
             }
-        }
-    }
+      //  }
+    //}
     
     fclose(fp);
     return(0);
