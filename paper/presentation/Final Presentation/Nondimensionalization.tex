@@ -77,7 +77,7 @@
       $\alpha = .95, \beta = .95, \gamma = .8$ and $\delta = .4$ 
       \begin{itemize}
       \item Three fixed points.
-      \item Two are unstable.
+      \item One is unstable.
       \end{itemize}
     }
 
@@ -104,34 +104,34 @@
 \end{frame}
 
 
-
-
-\begin{frame}
-\frametitle{Heun's Method}
-\begin{itemize}
-\item Heun's method is a numerical procedure for approximating ordinary differential equations with a given initial value.
-\item First you calculate the intermediate value $\tilde{y}_{i+1}$ and then the final approximation $y_{i+1}$ at the next generation point.
-\end{itemize}
-
-\begin{align*}
-	\tilde{y}_{i+1} &= y_i + \Delta t \ f(t_i, y_i) \\
-	y_{i+1} &= y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(\tilde{y}_{i+1}, t_{i+1})\right]
-\end{align*}
-\end{frame}
-
-
-\begin{frame}
-   \frametitle{Heun's Method vs. Euler's Method - Simulation}
-For the DE $y'=r y$ on $[0,T]$,\\
-\vspace{1em}
-	%\hspace{1.5em} Heun's:$\hspace{1em} \tilde{y}_{i+1} = y_i + \Delta t \ f(t_i, y_i)$ \\
-		\hspace{1.5em} Heun's:$ \hspace{1em} y_{i+1} = y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(\tilde{y}_{i+1}, t_{i+1})\right]$ \vspace{1em} \\
-	\hspace{1.5em} Euler's:$\hspace{1em}\tilde{y}_{i+1} = y_i + \Delta t \ f(y_i, t_i)$ \\
-\begin{columns}[t]
-    \column{.5\textwidth} 
-    \includegraphics[width=6cm]{img/Heun500}
-    \column{.5\textwidth}
-    \includegraphics[width=6cm]{img/Heun10000}
-  \end{columns}
-
-\end{frame}
+%
+%
+%\begin{frame}
+%\frametitle{Heun's Method}
+%\begin{itemize}
+%\item Heun's method is a numerical procedure for approximating ordinary differential equations with a given initial value.
+%\item First you calculate the intermediate value $\tilde{y}_{i+1}$ and then the final approximation $y_{i+1}$ at the next generation point.
+%\end{itemize}
+%
+%\begin{align*}
+%	\tilde{y}_{i+1} &= y_i + \Delta t \ f(t_i, y_i) \\
+%	y_{i+1} &= y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(\tilde{y}_{i+1}, t_{i+1})\right]
+%\end{align*}
+%\end{frame}
+%
+%
+%\begin{frame}
+%   \frametitle{Heun's Method vs. Euler's Method - Simulation}
+%For the DE $y'=r y$ on $[0,T]$,\\
+%\vspace{1em}
+%	%\hspace{1.5em} Heun's:$\hspace{1em} \tilde{y}_{i+1} = y_i + \Delta t \ f(t_i, y_i)$ \\
+%		\hspace{1.5em} Heun's:$ \hspace{1em} y_{i+1} = y_i + \frac{\Delta t}{2} \left[f(y_i,t_i) + f(\tilde{y}_{i+1}, t_{i+1})\right]$ \vspace{1em} \\
+%	\hspace{1.5em} Euler's:$\hspace{1em}\tilde{y}_{i+1} = y_i + \Delta t \ f(y_i, t_i)$ \\
+%\begin{columns}[t]
+%    \column{.5\textwidth} 
+%    \includegraphics[width=6cm]{img/Heun500}
+%    \column{.5\textwidth}
+%    \includegraphics[width=6cm]{img/Heun10000}
+%  \end{columns}
+%
+%\end{frame}

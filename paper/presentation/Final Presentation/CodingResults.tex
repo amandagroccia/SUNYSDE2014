@@ -6,6 +6,43 @@
   %\tableofcontents[ currentsection ]
 %\end{frame}
 
+\begin{frame}{Monte Carlo Simulation}
+\vfill
+
+For each run, we record the final approximation.
+\vfill
+Our frequency tables are divided into three fixed points: 
+
+\begin{itemize}
+	\item species 1 lives while species 2 dies out, $n_1$
+	\item species 2 lives while species 1 dies out, $n_2$
+	\item species 1 and species 2 lives, $n_3$
+\end{itemize}
+\vfill
+
+We can define an approximate $\chi^2$ distribution as:
+$$ \chi^2 \approx \frac{\left(n_1 - \mu_{n_1}\right)^2}{N P_1 (1 - P_1)} + 
+                  \frac{\left(n_2 - \mu_{n_2}\right)^2}{N P_2 (1 - P_2)} +
+									\frac{\left(n_3 - \mu_{n_3}\right)^2}{N P_3 (1 - P_3)}$$
+\vfill
+\end{frame}
+
+ 
+\begin{frame}{Calculating $N$}
+	
+	\vfill
+	
+	We need to estimate the number of runs required for a Monte Carlo simulation, in order to do this we need to use the confidence intervals and solve for $N$. 
+	
+	\vfill
+	
+	The confidence interval is $\left(\hat{P_1} - \epsilon , \hat{P_1} + \epsilon \right)$ \\
+	Where $$\epsilon =\frac{\chi^2}{12N}$$ and we assumed the error is approximately $.01$ .
+		
+	\vfill
+		
+\end{frame}
+
 \begin{frame}{Description of Simulations}
 We wrote code in C and MatLab that approximated our two-dimensional system of equations. 
 	\begin{itemize}
