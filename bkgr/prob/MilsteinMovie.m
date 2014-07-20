@@ -66,7 +66,7 @@ for runNumber = 1:size(colours,1),
     for k=2:skip:size(x(1,:),2),
         subplot(2,1,1)
         plot(timeValues(1:k+1),[0,x(1,(1:k))],currentRun)   % plot x against t
-        axis([0 T 0 1.8])
+        axis([0 T 0 1])
         xlabel('t','FontSize',16)
         ylabel('x(t)','FontSize',16,'Rotation',0)
         title('2D Milstein Approximations')
